@@ -1,0 +1,17 @@
+<h2 class="mat-headline">Home</h2>
+<p class="mat-subheading-2">Information about the show
+</p>
+
+<ng-container *ngIf="showData$ | async as show">
+  <mat-card>
+    <p class="mat-subheading-1 mat-body-2">Description:</p>
+    <p class="mat-body-1" [innerHtml]="show[0].synopsis"></p>
+    <p class="mat-subheading-1 mat-body-2">Years on air:</p>
+    <p class="mat-body-1 years-aired">{{show[0].yearsAired}}</p>
+
+    <p class="mat-subheading-1 mat-body-2">Creators:</p>
+    <div *ngFor="let creator of show[0].creators">
+      <a href="{{creator.url}}" target="_blank">{{creator.name}}</a>
+    </div>
+  </mat-card>
+</ng-container>

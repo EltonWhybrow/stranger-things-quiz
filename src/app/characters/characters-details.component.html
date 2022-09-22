@@ -1,0 +1,53 @@
+<ng-container *ngIf="characterDetails$ | async as details else loading">
+  <mat-card>
+
+    <button routerLink="/characters" mat-mini-fab color="primary" aria-label="back to characters">
+      <mat-icon> arrow_back</mat-icon>
+    </button>
+
+    <mat-grid-list cols="2" rowHeight="200px" gutterSize="0">
+
+      <mat-grid-tile>
+        <mat-card-header>
+          <mat-card-title>{{details.name.first}} {{details.name.middle}} {{details.name.last}}
+          </mat-card-title>
+          <mat-card-subtitle>{{details.occupation}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <img [src]="details.images.main" alt="{{details.name.first}}" width="auto" height="200">
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-card-content>
+      <p class="mat-subheading-2">
+        <span class="secondary">Gender:</span>
+        {{details.gender}}
+      </p>
+      <p class="mat-subheading-2">
+        <span class="secondary">Species:</span>
+        {{details.species}}
+      </p>
+
+      <p class="mat-subheading-2" *ngIf="details.homePlanet">
+        <span class="secondary">Home Planet:</span>
+        {{details.homePlanet}}
+      </p>
+
+      <p class="mat-subheading-2">
+        <span class="secondary">Common Quotes:</span>
+      </p>
+      <div *ngFor="let saying of details.sayings">
+        <p class="mat-caption">"{{saying}}"</p>
+      </div>
+    </mat-card-content>
+
+  </mat-card>
+</ng-container>
+
+<ng-template #loading>
+  <div class="">
+    Loading details...
+  </div>
+</ng-template>

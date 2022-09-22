@@ -1,0 +1,60 @@
+<h2 class="mat-headline">Quiz</h2>
+<p class="mat-subheading-2">Test your knowledge on Stranger Things Quiz
+</p>
+
+<div>
+  <mat-card *ngIf="questionList else loading">
+
+    <div class=" score">
+      <button mat-fab [color]="score > 0 ? 'accent' : 'primary'" aria-label="current score">
+        {{score}}
+      </button>
+    </div>
+
+    <ng-container *ngIf="!quizComplete">
+      <div class="questions">
+        <h2 class="mat-headline">{{questionList[currentQuestion]?.question}}</h2>
+      </div>
+
+      <div class="answers">
+        <ol *ngFor="let option of questionList[currentQuestion]?.possibleAnswers">
+          <li (click)="answer(currentQuestion, option)">
+            <button appBgColor [isCorrect]="option === this.questionList[currentQuestion].correctAnswer" color="primary"
+              mat-stroked-button>
+              {{option}}
+            </button>
+          </li>
+        </ol>
+      </div>
+    </ng-container>
+
+    <div *ngIf="quizComplete">
+      <div class="result">
+        <h2>Congratulations your done!!</h2>
+        <h2 class="mat-display-3">You scored {{score}}!</h2>
+        <p>Out of {{questionList.length}} questions</p>
+        <p>{{incorrectAnswer}} answered incorrectly!</p>
+      </div>
+    </div>
+
+
+    <mat-toolbar class="toolbar">
+      <div class="controls">
+        <button (click)="resetQuiz()" mat-mini-fab color="primary" aria-label="previous question">
+          <mat-icon>autorenew
+          </mat-icon>
+        </button> <span class="mat-body-1">Restart</span>
+      </div>
+
+      <h1 *ngIf="!quizComplete" class="mat-h1">Question {{currentQuestion + 1}} of {{questionList.length}}</h1>
+
+    </mat-toolbar>
+
+  </mat-card>
+
+  <ng-template #loading>
+    <div class="">
+      Loading quiz...
+    </div>
+  </ng-template>
+</div>
