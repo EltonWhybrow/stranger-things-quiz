@@ -1,17 +1,45 @@
-<h2 class="mat-headline">Home</h2>
-<p class="mat-subheading-2">Information about the show
-</p>
+<ng-container *ngIf="showData$ | async as show ; else loading">
+  <div class="show-info">
+    <h1 class="mat-h1">Welcome to the Stranger Things Quiz!</h1>
+    <h2 class="mat-h2">Information about the show
+    </h2>
+    <p class="mat-body" [innerHtml]="show[0].synopsis"></p>
 
-<ng-container *ngIf="showData$ | async as show">
-  <mat-card>
-    <p class="mat-subheading-1 mat-body-2">Description:</p>
-    <p class="mat-body-1" [innerHtml]="show[0].synopsis"></p>
-    <p class="mat-subheading-1 mat-body-2">Years on air:</p>
-    <p class="mat-body-1 years-aired">{{show[0].yearsAired}}</p>
 
-    <p class="mat-subheading-1 mat-body-2">Creators:</p>
-    <div *ngFor="let creator of show[0].creators">
-      <a href="{{creator.url}}" target="_blank">{{creator.name}}</a>
-    </div>
-  </mat-card>
+    <mat-grid-list cols="3">
+      <mat-grid-tile>
+        <div>
+          <p class="accent-color">Years on air: </p>
+          <p class="mat-body">{{show[0].yearsAired}}</p>
+        </div>
+
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div>
+          <p class="accent-color">Creators: </p>
+          <p *ngFor="let creator of show[0].creators" class="mat-body">{{creator.name}}</p>
+        </div>
+        <!-- <a href="{{creator.url}}" target="_blank" class="mat-h2 ">{{creator.name}}</a> -->
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button routerLink="/quiz" routerLinkActive="is-active" aria-label="show quiz" mat-flat-button color="primary">
+          Do the quiz!</button>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+    <!--
+    <p class="accent-color">Years on air:</p>
+    <p class="mat-h2 ">{{show[0].yearsAired}}</p> -->
+
+    <!-- <p class="accent-color">Creators:</p>
+      <ul>
+        <li *ngFor="let creator of show[0].creators" role="listitem">
+          <a href="{{creator.url}}" target="_blank" class="mat-h2 ">{{creator.name}}</a>
+        </li>
+      </ul> -->
+
+  </div>
 </ng-container>
+
+<ng-template #loading>Loading...</ng-template>

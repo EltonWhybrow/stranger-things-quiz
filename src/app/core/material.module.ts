@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatListModule } from '@angular/material/list';
 
 const material = [
   MatToolbarModule,
@@ -14,7 +15,9 @@ const material = [
   MatButtonModule,
   MatGridListModule,
   MatCardModule,
-  LayoutModule
+  LayoutModule,
+  MatListModule
+
 ]
 
 
