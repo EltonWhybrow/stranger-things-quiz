@@ -5,6 +5,7 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
+import { FooterComponent } from './core/footer/footer.component';
 import { MaterialModule } from './core/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BgColorDirective } from './shared/bg-color.directive';
@@ -13,6 +14,7 @@ import { BgColorDirective } from './shared/bg-color.directive';
   declarations: [
     AppComponent,
     HeaderComponent,
+    FooterComponent,
     routingComponents,
     BgColorDirective
   ],
