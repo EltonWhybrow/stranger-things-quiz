@@ -5,35 +5,54 @@
       <mat-icon> arrow_back</mat-icon>
     </button>
 
+
     <mat-grid-list cols="2" rowHeight="200px" gutterSize="0">
 
       <mat-grid-tile>
         <mat-card-header>
-          <mat-card-title>{{details.name.first}} {{details.name.middle}} {{details.name.last}}
+          <mat-card-title>{{details.name.show}}
           </mat-card-title>
-          <mat-card-subtitle>{{details.occupation}}</mat-card-subtitle>
+          <mat-card-subtitle>({{details.name.real}})</mat-card-subtitle>
         </mat-card-header>
       </mat-grid-tile>
 
       <mat-grid-tile>
-        <img [src]="details.images.main" alt="{{details.name.first}}" width="auto" height="200">
+        <img src="{{details.images.main}}.png" alt="{{details.name.show}}" width="auto" height="200">
       </mat-grid-tile>
     </mat-grid-list>
 
     <mat-card-content>
       <p class="mat-subheading-2">
+        <span class="secondary">Age:</span>
+        {{details.age}}
+      </p>
+
+      <p class="mat-subheading-2">
         <span class="secondary">Gender:</span>
         {{details.gender}}
       </p>
-      <p class="mat-subheading-2">
-        <span class="secondary">Species:</span>
-        {{details.species}}
-      </p>
 
-      <p class="mat-subheading-2" *ngIf="details.homePlanet">
+      <p class="mat-subheading-2">
+        <span class="secondary">Occupation:</span>
+        {{details.occupation}}
+      </p>
+      <!-- <p class="mat-subheading-2">
+        <span class="secondary">Species:</span>
+        {{details.}}
+      </p> -->
+
+      <!-- <p class="mat-subheading-2" *ngIf="details.homePlanet">
         <span class="secondary">Home Planet:</span>
         {{details.homePlanet}}
+      </p> -->
+
+      <p class="mat-subheading-2">
+        <span class="secondary">Nicknames:</span>
       </p>
+      <div *ngFor="let nickname of details.nicknames">
+        <p class="mat-caption">"{{nickname}}"</p>
+      </div>
+
 
       <p class="mat-subheading-2">
         <span class="secondary">Common Quotes:</span>

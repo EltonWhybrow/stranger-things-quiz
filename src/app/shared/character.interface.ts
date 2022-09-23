@@ -1,24 +1,21 @@
 
 export interface Name {
-  first: string;
-  middle: string;
-  last: string;
+  show: string;
+  real: string;
 }
 
 export interface Images {
-  'head-shot': string;
   main: string;
 }
 
 export interface ICharacter {
   name: Name;
   images: Images;
-  age: string;
   gender: string;
-  species: string;
-  homePlanet: string;
   occupation: string;
+  nicknames: string;
   sayings: string[];
+  age: string;
   id: number;
 }
 

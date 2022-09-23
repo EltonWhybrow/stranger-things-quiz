@@ -1,30 +1,29 @@
-<h2 class="mat-headline">Characters</h2>
-<p class="mat-subheading-2">List of all character in show
-</p>
-<mat-grid-list *ngIf="showCharacters$ else loading" [cols]="cols" [rowHeight]="rowHeight" gutterSize="1rem">
-  <mat-grid-tile class="character" *ngFor="let character of showCharacters$ | async"
-    (click)="getCharacterDetails(character.id)">
+<div class="content-area">
 
-    <mat-card class="card">
-      <mat-grid-list cols="2">
+  <mat-grid-list *ngIf="showCharacters$ ; else loading" [cols]="cols" [rowHeight]="rowHeight" gutterSize="1rem">
 
-        <mat-grid-tile>
-          <mat-card-header>
-            <mat-card-title color="primary">{{character.name.first}} {{character.name.middle}} {{character.name.last}}
-            </mat-card-title>
-            <mat-card-subtitle class="occupation">{{character.occupation}}</mat-card-subtitle>
-          </mat-card-header>
-        </mat-grid-tile>
-        <mat-grid-tile> <img [src]="character.images.main" alt="{{character.name.first}}" width="auto" height="160px">
-        </mat-grid-tile>
-      </mat-grid-list>
-    </mat-card>
+    <mat-grid-tile class="character" *ngFor="let character of showCharacters$ | async"
+      (click)="getCharacterDetails(character.id)">
 
-  </mat-grid-tile>
-</mat-grid-list>
+      <div style="position: relative">
+        <p class="name-star">
+          <i class="star"></i>
+        </p>
+        <div class="name-sign">
+          <h1>{{character.name.show}}</h1>
+          <div class="highlight-para">{{character.name.real}}
+          </div>
+        </div>
 
-<ng-template #loading>
-  <div class="">
-    Loading...
-  </div>
-</ng-template>
+        <picture>
+          <source srcset="{{character.images.main}}.webp" type="image/webp">
+          <source srcset="{{character.images.main}}.png" type="image/png">
+          <img mat-card-image class="w-full object-cover object-center rounded-lg shadow-md"
+            src="{{character.images.main}}.png" alt="{{character.name.show}}">
+        </picture>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <ng-template #loading>Loading...</ng-template>
+</div>

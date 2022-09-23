@@ -7,19 +7,13 @@ import { HttpService } from '../shared/http-service.service';
 
 @Component({
   templateUrl: './characters.component.html',
-  styles: [`
-    .card {
-      width: 100%;
-      height: auto;
-      cursor: pointer;
-    }
-  `]
+  styleUrls: ['./characters.component.scss'],
 })
 export class CharactersComponent implements OnInit {
 
   showCharacters$: Observable<ICharacter[]> | undefined;
   cols = 2;
-  rowHeight = '230px'
+  rowHeight = '450px'
 
   constructor(
     private httpService: HttpService,

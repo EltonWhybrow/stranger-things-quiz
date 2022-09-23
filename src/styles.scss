@@ -7,7 +7,14 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: lightblue;
+  background-color: black;
+}
+
+.content-area {
+  padding: 4rem;
+  background-color: rgb(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 20px;
 }
 
 // Background for site

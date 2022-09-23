@@ -1,13 +1,61 @@
+// Import library functions for theme creation.
 @import "../node_modules/@angular/material/theming";
+// Include non-theme styles for core.
 @include mat-core();
 
-$my-primary: mat-palette($mat-brown, 800);
-$my-accent: mat-palette($mat-lime, 500);
+// Define your application's custom theme.
+$my-primary: mat-palette($mat-brown);
+$my-accent: mat-palette($mat-lime);
+// $primary: mat-palette($mat-indigo);
+// $accent: mat-palette($mat-pink, A200, A100, A400);
+$theme: mat-light-theme($my-primary, $my-accent);
 
-$my-theme: mat-light-theme($my-primary, $my-accent);
+// Define a mixin that accepts a theme and outputs the theme-specific styles.
+@mixin stranger-things-theme($theme) {
+  // Extract the palettes you need from the theme definition.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
 
-@include angular-material-theme($my-theme);
-
-.accent-color {
-  color: mat-color($my-accent) !important;
+  // Define any styles affected by the theme.
+  // Get a contrast color for a hue by adding `-contrast` to any other key.
+  // border-color: mat-color($primary, "100-contrast");
+  // See https://material.io/archive/guidelines/style/color.html#color-color-palette for hues.
+  // Get a relative color for a hue ('lighter' or 'darker')
+  .highlight-para {
+    color: mat-color($accent);
+    outline-color: mat-color($accent);
+  }
+  .text-link {
+    color: mat-color($accent, 800);
+  }
 }
+
+// Typograpghy mixin custom
+// @mixin stranger-things-typography($config) {
+//   .highlight-para {
+//     font: {
+//       family: mat-font-family($config, body-1);
+//       size: mat-font-size($config, body-1);
+//       weight: mat-font-weight($config, body-1);
+//     }
+//   }
+// }
+
+// @use "@angular/material" as mat;
+
+// $my-custom-typography-config: mat.define-typography-config(
+//   $display-4:
+//     mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
+//   $display-3:
+//     mat.define-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+//   $display-2:
+//     mat.define-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+//   $display-1: mat.define-typography-level(34px, 40px, 400),
+//   $headline: mat.define-typography-level(24px, 32px, 400),
+//   // ...
+// );
+
+// Include theme styles for Angular Material components.
+@include angular-material-theme($theme);
+// Include theme styles for your custom components.
+@include stranger-things-theme($theme);

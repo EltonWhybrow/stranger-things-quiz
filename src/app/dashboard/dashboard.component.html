@@ -1,5 +1,5 @@
 <ng-container *ngIf="showData$ | async as show ; else loading">
-  <div class="show-info">
+  <div class="content-area">
     <h1 class="mat-h1">Welcome to the Stranger Things Quiz!</h1>
     <h2 class="mat-h2">Information about the show
     </h2>
@@ -9,15 +9,16 @@
     <mat-grid-list cols="3">
       <mat-grid-tile>
         <div>
-          <p class="accent-color">Years on air: </p>
+          <p class="highlight-para">Years on air: </p>
           <p class="mat-body">{{show[0].yearsAired}}</p>
         </div>
 
       </mat-grid-tile>
       <mat-grid-tile>
         <div>
-          <p class="accent-color">Creators: </p>
-          <p *ngFor="let creator of show[0].creators" class="mat-body">{{creator.name}}</p>
+          <p class="highlight-para">Creators: </p>
+          <p *ngFor="let creator of show[0].creators" class="mat-body">{{creator.name}} - <a href="{{creator.url}}"
+              target="_blank" class="text-link">imdb</a></p>
         </div>
         <!-- <a href="{{creator.url}}" target="_blank" class="mat-h2 ">{{creator.name}}</a> -->
       </mat-grid-tile>

@@ -6,13 +6,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { QuizComponent } from './quiz/quiz.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: '', component: DashboardComponent, title: 'Welcome - Stranger Things Quiz' },
   { path: '', pathMatch: 'full', redirectTo: '' },
-  { path: 'characters', component: CharactersComponent },
+  { path: 'characters', component: CharactersComponent, title: 'Characters - Stranger Things Quiz' },
   {
-    path: 'character-details/:id', component: CharactersDetailsComponent
+    path: 'character-details/:id', component: CharactersDetailsComponent,
+    title: 'Character details - Stranger Things Quiz'
   },
-  { path: 'quiz', component: QuizComponent },
+  { path: 'quiz', component: QuizComponent, title: 'Quiz - Stranger Things Quiz' },
 ]
 
 @NgModule({
