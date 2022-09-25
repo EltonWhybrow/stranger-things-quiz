@@ -50,6 +50,13 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .name-sign {
+    right: 40px;
+    top: 60px;
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
