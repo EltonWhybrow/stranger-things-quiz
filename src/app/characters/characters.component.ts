@@ -12,7 +12,7 @@ import { HttpService } from '../shared/http-service.service';
 export class CharactersComponent implements OnInit {
 
   showCharacters$: Observable<ICharacter[]> | undefined;
-  cols = 2;
+  cols = 1;
   rowHeight = '450px'
 
   constructor(

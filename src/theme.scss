@@ -28,6 +28,11 @@ $theme: mat-light-theme($my-primary, $my-accent);
   .text-link {
     color: mat-color($accent, 800);
   }
+
+  // burger bits
+  #nav-burger-ani span {
+    background-color: mat-color($accent);
+  }
 }
 
 // Typograpghy mixin custom

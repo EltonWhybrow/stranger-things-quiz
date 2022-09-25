@@ -8,6 +8,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 const material = [
   MatToolbarModule,
@@ -16,8 +17,8 @@ const material = [
   MatGridListModule,
   MatCardModule,
   LayoutModule,
-  MatListModule
-
+  MatListModule,
+  MatSidenavModule
 ]
 
 
@@ -28,6 +29,8 @@ const material = [
   ],
   exports: [
     material
+  ],
+  declarations: [
   ]
 })
 export class MaterialModule { }

@@ -1,8 +1,8 @@
 <header>
   <mat-toolbar class="navbar" color="primary">
     <div class="logo">
-      <img class="logo__main" src="../../../assets/imgs/logo/st-logo.png" width="380px" alt="Logo">
-      <div class="quiz-text container">
+      <img class="logo__main" src="../../../assets/imgs/logo/st-logo.png" alt="Logo">
+      <div class="quiz-text">
         <h1 class="neonText">
           Quiz
         </h1>
@@ -23,8 +23,69 @@
         class="button">
         Quiz
       </button>
+
     </div>
 
   </mat-toolbar>
+
+  <!-- Mobile nav -->
+  <div id="burger-nav" class="">
+
+    <!-- Burger button -->
+    <button class="burger-toggle" type="button" aria-label="Toggle navigation" (click)="toggleBurgerNav()">
+      <div id="nav-burger-ani" [ngClass]="{
+      'open':burgerActive}">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </div>
+    </button>
+
+    <!-- Burger content -->
+    <nav id="burger-nav__list" role="navigation" aria-label="Main" [ngClass]="{
+        'open':burgerActive}">
+
+      <div class="logo">
+        <img class="logo__main" src="../../../assets/imgs/logo/st-logo.png" width="180px" alt="Logo">
+        <div class="quiz-text">
+          <h1 class="neonText">
+            Quiz
+          </h1>
+          <h2 class="neonText">Night</h2>
+        </div>
+      </div>
+
+
+      <ul>
+        <li>
+          <button mat-stroked-button color="accent" routerLink="/" routerLinkActive="is-active" aria-label="Home"
+            class="button mat-display-1" (click)="this.burgerActive = false;">
+            Home
+          </button>
+        </li>
+        <li>
+          <button mat-stroked-button color="accent" routerLink="/characters" routerLinkActive="is-active"
+            aria-label="character info" class="button mat-display-1" (click)="this.burgerActive = false;">
+            Characters
+          </button>
+        </li>
+        <li>
+          <button mat-stroked-button color="accent" routerLink="/quiz" routerLinkActive="is-active"
+            aria-label="show quiz" class="button mat-display-1" (click)="this.burgerActive = false;">
+            Quiz
+          </button>
+        </li>
+      </ul>
+
+    </nav>
+
+  </div>
+
+
+
+
 
 </header>
