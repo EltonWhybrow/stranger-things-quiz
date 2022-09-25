@@ -1,7 +1,9 @@
 <header>
   <mat-toolbar class="navbar" color="primary">
     <div class="logo">
-      <img class="logo__main" src="../../../assets/imgs/logo/st-logo.png" alt="Logo">
+      <a routerLink="/">
+        <img class="logo__main" src="../../../assets/imgs/logo/st-logo.png" alt="Logo">
+      </a>
       <div class="quiz-text">
         <h1 class="neonText">
           Quiz
@@ -11,10 +13,10 @@
     </div>
 
     <div class="simple-nav">
-      <button routerLink="/" routerLinkActive="is-active" mat-icon-button color="accent" class="button home-icon"
+      <!-- <button routerLink="/" routerLinkActive="is-active" mat-icon-button color="accent" class="button home-icon"
         aria-label="Home">
         <mat-icon>home</mat-icon>
-      </button>
+      </button> -->
       <button mat-stroked-button color="accent" routerLink="/characters" routerLinkActive="is-active"
         aria-label="character info" class="button">
         Characters
@@ -22,6 +24,10 @@
       <button mat-stroked-button color="accent" routerLink="/quiz" routerLinkActive="is-active" aria-label="show quiz"
         class="button">
         Quiz
+      </button>
+      <button mat-stroked-button color="accent" routerLink="/about" routerLinkActive="is-active" aria-label="show quiz"
+        class="button">
+        About
       </button>
 
     </div>
@@ -49,7 +55,9 @@
         'open':burgerActive}">
 
       <div class="logo">
-        <img class="logo__main" src="../../../assets/imgs/logo/st-logo.png" width="180px" alt="Logo">
+        <a routerLink="/" (click)="this.burgerActive = false;">
+          <img class="logo__main" src="../../../assets/imgs/logo/st-logo.png" width="180px" alt="Logo">
+        </a>
         <div class="quiz-text">
           <h1 class="neonText">
             Quiz
@@ -60,12 +68,12 @@
 
 
       <ul>
-        <li>
+        <!-- <li>
           <button mat-stroked-button color="accent" routerLink="/" routerLinkActive="is-active" aria-label="Home"
             class="button mat-display-1" (click)="this.burgerActive = false;">
             Home
           </button>
-        </li>
+        </li> -->
         <li>
           <button mat-stroked-button color="accent" routerLink="/characters" routerLinkActive="is-active"
             aria-label="character info" class="button mat-display-1" (click)="this.burgerActive = false;">
@@ -74,6 +82,12 @@
         </li>
         <li>
           <button mat-stroked-button color="accent" routerLink="/quiz" routerLinkActive="is-active"
+            aria-label="show quiz" class="button mat-display-1" (click)="this.burgerActive = false;">
+            Quiz
+          </button>
+        </li>
+        <li>
+          <button mat-stroked-button color="accent" routerLink="/about" routerLinkActive="is-active"
             aria-label="show quiz" class="button mat-display-1" (click)="this.burgerActive = false;">
             Quiz
           </button>

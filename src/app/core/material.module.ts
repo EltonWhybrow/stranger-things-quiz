@@ -9,6 +9,8 @@ import { MatCardModule } from '@angular/material/card';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const material = [
   MatToolbarModule,
@@ -18,7 +20,8 @@ const material = [
   MatCardModule,
   LayoutModule,
   MatListModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatDialogModule
 ]
 
 
@@ -31,6 +34,8 @@ const material = [
     material
   ],
   declarations: [
+  
+    PageNotFoundComponent
   ]
 })
 export class MaterialModule { }

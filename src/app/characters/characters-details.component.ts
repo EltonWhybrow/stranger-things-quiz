@@ -31,8 +31,9 @@ export class CharactersDetailsComponent implements OnInit {
     */
     this.http.getCharacterDetails(this.characterId).subscribe((data: ICharacter | any) => {
       this.characterDetails = data[0]
-
     });
+
+
   }
 
 }

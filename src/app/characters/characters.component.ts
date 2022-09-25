@@ -23,6 +23,7 @@ export class CharactersComponent implements OnInit {
   ngOnInit(): void {
     this.showCharacters$ = this.httpService.getCharacters();
 
+
     /*
     Angualr Material breakpoint grid setting
     */
@@ -49,6 +50,8 @@ export class CharactersComponent implements OnInit {
           this.cols = 2
           this.rowHeight = '300px'
         } else if (breakpoints[Breakpoints.Small]) {
+          this.cols = 2
+        } else if (breakpoints[Breakpoints.XSmall]) {
           this.cols = 1
         }
       });

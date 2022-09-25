@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { MyDialogComponent } from '../my-dialog/my-dialog.component';
 import { HttpService } from '../shared/http-service.service';
 
 @Component({
@@ -13,11 +15,22 @@ export class QuizComponent implements OnInit {
   public currentQuestion: number = 0;
   public score: number = 0;
   quizComplete: boolean = false;
+  modalText = "Ready to battle the upside down?";
 
-  constructor(private httpService: HttpService) { }
+  constructor(private httpService: HttpService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.getAllQuestions();
+    this.getStartedModal();
+  }
+
+
+  getStartedModal() {
+    const myCompDialog = this.dialog.open(MyDialogComponent, { data: this.modalText });
+    myCompDialog.afterClosed().subscribe((res) => {
+      // Data back from dialog
+      console.log({ res });
+    });
   }
 
   getAllQuestions() {

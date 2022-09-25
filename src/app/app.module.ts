@@ -9,6 +9,9 @@ import { FooterComponent } from './core/footer/footer.component';
 import { MaterialModule } from './core/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BgColorDirective } from './shared/bg-color.directive';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { AboutComponent } from './about/about.component';
+import { MyDialogComponent } from './my-dialog/my-dialog.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { BgColorDirective } from './shared/bg-color.directive';
     HeaderComponent,
     FooterComponent,
     routingComponents,
-    BgColorDirective
+    BgColorDirective,
+    SpinnerComponent,
+    AboutComponent,
+    MyDialogComponent
   ],
   imports: [
     BrowserModule,

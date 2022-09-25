@@ -59,74 +59,77 @@
   },
   {
     "id": 6,
-    "question": "How did Fry meet Bender in the first episode?",
+    "question": "Who is the fist person from Hawkins Hgh School to die at the hands of The Demogorgon?",
     "possibleAnswers": [
-      "Bar",
-      "Suicide Booth",
-      "Street",
-      "Shop",
-      "Looking for jobs"
+      "Barbara Windsor",
+      "Barcardi B",
+      "Barbara Holland",
+      "Bambi Stevens",
+      "Barb Banners"
     ],
-    "correctAnswer": "Suicide Booth"
+    "correctAnswer": "Barbara Holland"
   },
   {
     "id": 7,
-    "question": "In 'The Cyber House Rules' how many orphans does Bender adopt?",
+    "question": "Which character from the show is British, and was born and raised in Spain?",
     "possibleAnswers": [
-      "8",
-      "10",
-      "12",
-      "14"
+      "Jim Hooper",
+      "Eleven",
+      "Max Mayfield",
+      "Bill Byers",
+      "Steve Harrington"
     ],
-    "correctAnswer": 12
+    "correctAnswer": "Eleven"
   },
   {
     "id": 8,
-    "question": "In 'The Why of Fry' what vehicle does Nibbler give to Fry to travel to the Infosphere?",
+    "question": "How many times was the show rejected by several networks before starting filming?",
     "possibleAnswers": [
-      "Scooty-Puff Jr",
-      "Zooty-Puff Jr",
-      "Scoochy-Puff Jr",
-      "Booty-Puff Jr"
+      "15-20",
+      "20-40",
+      "1-5",
+      "5-15"
     ],
-    "correctAnswer": "Scooty-Puff Jr"
+    "correctAnswer": "15-20"
   },
   {
     "id": 9,
-    "question": "Hermes' wife, LaBarbara, was once married to who?",
+    "question": "Who does vampire impresion on Haloween in Hawkins?",
     "possibleAnswers": [
-      "Trinidad Slim",
-      "Barbados Slim",
-      "Antigua Slim",
-      "Grenada Slim"
+      "Bob Newby",
+      "Steve Harrington",
+      "Lucas Sinclair",
+      "Eddie Munson"
     ],
-    "correctAnswer": "Barbados Slim"
+    "correctAnswer": "Bob Newby"
   },
   {
     "id": 10,
-    "question": "Where do the crew travel to in order to find the original were-car in 'The Honking'?",
+    "question": "Whick character admits they are scared of horror movies?",
     "possibleAnswers": [
-      "The old abandoned Chevrolet factory",
-      "The old abandoned Dodge factory",
-      "The old abandoned Ford factory",
-      "The old abandoned Chrysler factory"
+      "Eddie Munson",
+      "Sadie Sink",
+      "Eleven",
+      "Murray Murray Bauman",
+      "Karen Wheeler"
     ],
-    "correctAnswer": "The old abandoned Chrysler factory"
+    "correctAnswer": "Sadie Sink"
   },
   {
     "id": 11,
-    "question": "What was the name of Fry's mermaid girlfriend in 'The Deep South'?",
+    "question": "What famous horror movie character player 'Victor Kreel' in Season 4 of Stranger things?",
     "possibleAnswers": [
-      "Ariel",
-      "Umbriel",
-      "Azriel",
-      "Meriel"
+      "Hannibel Lecter",
+      "Freddy Krueger",
+      "Michael Myers",
+      "Leatherface",
+      "Chucky"
     ],
-    "correctAnswer": "Umbriel"
+    "correctAnswer": "Freddy Krueger"
   },
   {
     "id": 12,
-    "question": "What was the PIN for Fry's ATM card, as revealed in 'A Fishful of Dollars'?",
+    "question": "?",
     "possibleAnswers": [
       "1077",
       "1150",
