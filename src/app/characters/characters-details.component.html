@@ -1,72 +1,88 @@
-<ng-container *ngIf="characterDetails$ | async as details else loading">
-  <mat-card>
-
-    <button routerLink="/characters" mat-mini-fab color="primary" aria-label="back to characters">
-      <mat-icon> arrow_back</mat-icon>
-    </button>
-
-
-    <mat-grid-list cols="2" rowHeight="200px" gutterSize="0">
+<div class="content-area">
+  <button routerLink="/characters" mat-mini-fab color="accent" aria-label="back to characters" class="back">
+    <mat-icon> arrow_back</mat-icon>
+  </button>
+  <ng-container *ngIf="characterDetails as details else loading">
+    <mat-grid-list cols="1" rowHeight="550px" gutterSize="0">
 
       <mat-grid-tile>
-        <mat-card-header>
-          <mat-card-title>{{details.name.show}}
-          </mat-card-title>
-          <mat-card-subtitle>({{details.name.real}})</mat-card-subtitle>
-        </mat-card-header>
+        <picture>
+          <source srcset="{{details.images.details}}.webp" type="image/webp">
+          <source srcset="{{details.images.details}}.png" type="image/png">
+          <img mat-card-image class="character-img" src="{{details.images.details}}.png" alt="{{details.name.show}}"
+            width="300px" height="auto">
+        </picture>
       </mat-grid-tile>
 
       <mat-grid-tile>
-        <img src="{{details.images.main}}.png" alt="{{details.name.show}}" width="auto" height="200">
+        <mat-card class="card_details">
+          <mat-card-header>
+            <mat-card-title class="mat-card-title">
+              {{details.name.show}}
+            </mat-card-title>
+            <mat-card-subtitle class="mat-card-subtitle highlight-para">({{details.name.real}})</mat-card-subtitle>
+            <div mat-card-avatar class="header-image" style="
+          background-image: url({{details.images.main}}.png);
+          background-color: white;
+          background-size: cover;">
+            </div>
+          </mat-card-header>
+
+          <mat-card-content>
+
+            <p class="mat-subheading-2" [innerHtml]="details.lowdown">
+              <span class="">In the beginning:</span>
+            </p>
+
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="card_details">
+
+          <mat-card-content>
+            <p class="mat-subheading-2">
+              Gender:
+              <span class="highlight-para">
+                {{details.gender}}
+              </span>
+            </p>
+
+            <p class="mat-subheading-2">
+              Occupation:
+              <span class="highlight-para">
+                {{details.occupation}}
+              </span>
+            </p>
+
+            <ng-container *ngIf="details.nicknames.length">
+              <p class="mat-subheading-2" style="margin-bottom: -5px">
+                Nicknames:
+              </p>
+
+              <span style="display: inline-block;" *ngFor="let nickname of details.nicknames; ; last as isLast"
+                class="mat-subheading-2 highlight-para">
+                {{nickname}} {{isLast ? '' : ',&nbsp;' }}
+              </span>
+            </ng-container>
+
+            <p class="mat-subheading-2" style="margin-bottom: -5px">
+              Famous Quotes:
+            </p>
+            <div *ngFor="let saying of details.sayings">
+              <p class="mat-subheading-2 highlight-para" style="margin-bottom: -5px">"{{saying}}"</p>
+            </div>
+          </mat-card-content>
+        </mat-card>
       </mat-grid-tile>
+
     </mat-grid-list>
 
-    <mat-card-content>
-      <p class="mat-subheading-2">
-        <span class="secondary">Age:</span>
-        {{details.age}}
-      </p>
 
-      <p class="mat-subheading-2">
-        <span class="secondary">Gender:</span>
-        {{details.gender}}
-      </p>
+  </ng-container>
 
-      <p class="mat-subheading-2">
-        <span class="secondary">Occupation:</span>
-        {{details.occupation}}
-      </p>
-      <!-- <p class="mat-subheading-2">
-        <span class="secondary">Species:</span>
-        {{details.}}
-      </p> -->
+  <ng-template #loading>
+    <div class="">
+      Loading details...
+    </div>
+  </ng-template>
 
-      <!-- <p class="mat-subheading-2" *ngIf="details.homePlanet">
-        <span class="secondary">Home Planet:</span>
-        {{details.homePlanet}}
-      </p> -->
-
-      <p class="mat-subheading-2">
-        <span class="secondary">Nicknames:</span>
-      </p>
-      <div *ngFor="let nickname of details.nicknames">
-        <p class="mat-caption">"{{nickname}}"</p>
-      </div>
-
-
-      <p class="mat-subheading-2">
-        <span class="secondary">Common Quotes:</span>
-      </p>
-      <div *ngFor="let saying of details.sayings">
-        <p class="mat-caption">"{{saying}}"</p>
-      </div>
-    </mat-card-content>
-
-  </mat-card>
-</ng-container>
-
-<ng-template #loading>
-  <div class="">
-    Loading details...
-  </div>
-</ng-template>
+</div>

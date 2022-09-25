@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
-import { catchError, map } from 'rxjs/operators';
+import { catchError, tap, map, filter } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 
 import { IShowInfo } from './show.interface';
@@ -19,6 +19,8 @@ export class HttpService {
   getQuestions(): Observable<IQuestions[]> {
     return this.http.get<IQuestions[]>('../../assets/data/st-questions.json')
       .pipe(
+        map(questions => questions),
+        tap(questions => console.log("questions>>>>>>>: " + JSON.stringify(questions))),
         catchError(this.handleError<any[]>([]))
       );
   }
@@ -26,6 +28,8 @@ export class HttpService {
   getShowInfo(): Observable<IShowInfo[]> {
     return this.http.get<IShowInfo[]>('../../assets/data/st-info.json')
       .pipe(
+        map(info => info),
+        tap(info => console.log("info: " + JSON.stringify(info))),
         catchError(this.handleError<any>([]))
       );
   }
@@ -33,13 +37,15 @@ export class HttpService {
   getCharacters(): Observable<ICharacter[]> {
     return this.http.get<ICharacter[]>('../../assets/data/st-characters.json')
       .pipe(
+        map(characters => characters),
+        // tap(characters => console.log("characters: " + JSON.stringify(characters))),
         catchError(this.handleError<any[]>([]))
       );
   }
 
-  getCharacterDetails(id: number): Observable<ICharacter> {
+  getCharacterDetails(id: string): Observable<ICharacter> {
     return this.http.get<any>('../../assets/data/st-characters.json').pipe(
-      map(character => character[id]),
+      map(character => character.filter((data: any) => data.idString === id)),
       // tap(character => console.log("One character: " + JSON.stringify(character))),
       catchError(this.handleError<ICharacter>())
     );

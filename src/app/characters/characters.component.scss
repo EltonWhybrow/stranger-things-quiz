@@ -4,7 +4,6 @@
   cursor: pointer;
   background-color: transparent;
   color: white;
-  border: solid red 1px;
 }
 
 // .example-header-image {
@@ -25,6 +24,8 @@
 // }
 
 .name-star,
+.name-star-small,
+.name-star-smallest,
 .name-sign {
   position: absolute;
 }
@@ -35,14 +36,15 @@
 }
 
 .name-sign {
-  right: 28px;
-  top: 74px;
+  z-index: 99;
+  right: 2px;
+  top: 42px;
   border: solid 2px white;
   background: #795548;
   text-align: center;
   padding: 1px 1rem 3px;
   border-radius: 5px;
-  transform: rotate(18deg);
+  transform: rotate(20deg);
   h1 {
     margin-bottom: 0;
   }
@@ -58,15 +60,47 @@
 }
 
 .name-star {
-  right: 5px;
-  top: 15px;
-  animation: 5s rotate infinite;
+  right: -12px;
+  top: -12px;
+  animation: 3s rotate infinite;
   animation-play-state: paused;
-  animation-timing-function: ease-in;
+  animation-timing-function: linear;
+  width: 28px;
+  height: 28px;
+}
+
+.name-star-small {
+  right: -24px;
+  top: -24px;
+  animation: 3s rotate infinite;
+  animation-play-state: paused;
+  animation-timing-function: linear;
+  width: 14px;
+  height: 14px;
+}
+
+.name-star-smallest {
+  right: -30px;
+  top: -5px;
+  animation: 3s rotate infinite;
+  animation-play-state: paused;
+  animation-timing-function: linear;
+  width: 10px;
+  height: 10px;
 }
 
 .mat-grid-tile:hover .name-star {
   animation-play-state: running;
+}
+
+.mat-grid-tile:hover .character-img {
+  filter: drop-shadow(0px 3px 10px #ea3910);
+}
+
+.character-img {
+  border-bottom: solid 1px #ea3910;
+  will-change: filter;
+  transition: filter 0.3s ease-in-out;
 }
 
 .star {
@@ -85,7 +119,7 @@
   border-left: 0.3em solid transparent;
 
   /* Controlls the size of the stars. */
-  font-size: 90px;
+  font-size: 20px;
 
   &:before,
   &:after {

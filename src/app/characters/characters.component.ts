@@ -24,29 +24,37 @@ export class CharactersComponent implements OnInit {
     this.showCharacters$ = this.httpService.getCharacters();
 
     this.responsive.observe([
-      Breakpoints.TabletLandscape,
-      Breakpoints.TabletPortrait,
-      Breakpoints.HandsetLandscape,
-      Breakpoints.HandsetPortrait
+      // Breakpoints.TabletLandscape,
+      // Breakpoints.TabletPortrait,
+      // Breakpoints.HandsetLandscape,
+      // Breakpoints.HandsetPortrait,
+      Breakpoints.XLarge,
+      Breakpoints.Large,
+      Breakpoints.Medium,
+      Breakpoints.Small,
+
     ])
       .subscribe(res => {
         const breakpoints = res.breakpoints;
-        if (breakpoints[Breakpoints.TabletLandscape]) {
+        if (breakpoints[Breakpoints.XLarge]) {
           this.cols = 2
-          this.rowHeight = '320px'
-        } else if (breakpoints[Breakpoints.TabletPortrait]) {
-          this.cols = 1
-          this.rowHeight = '190px'
-        } else if (breakpoints[Breakpoints.HandsetLandscape]) {
+          this.rowHeight = '400px'
+        } else if (breakpoints[Breakpoints.Large]) {
           this.cols = 2
-          this.rowHeight = '200px'
-        } else if (breakpoints[Breakpoints.HandsetPortrait]) {
+          this.rowHeight = '400px'
+        } else if (breakpoints[Breakpoints.Medium]) {
+          this.cols = 2
+          this.rowHeight = '300px'
+        } else if (breakpoints[Breakpoints.Small]) {
           this.cols = 1
         }
       });
   }
 
-  getCharacterDetails(userId: number) {
+  /*
+  Route to the choosen characters details passing in the idString of character
+  */
+  getCharacterDetails(userId: string) {
     this.router.navigate(['/character-details', userId]);
   }
 

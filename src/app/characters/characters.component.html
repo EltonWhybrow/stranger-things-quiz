@@ -3,23 +3,24 @@
   <mat-grid-list *ngIf="showCharacters$ ; else loading" [cols]="cols" [rowHeight]="rowHeight" gutterSize="1rem">
 
     <mat-grid-tile class="character" *ngFor="let character of showCharacters$ | async"
-      (click)="getCharacterDetails(character.id)">
+      (click)="getCharacterDetails(character.idString)">
 
-      <div style="position: relative">
-        <p class="name-star">
-          <i class="star"></i>
-        </p>
+      <div>
         <div class="name-sign">
           <h1>{{character.name.show}}</h1>
           <div class="highlight-para">{{character.name.real}}
           </div>
+          <img class="name-star" src="assets/imgs/cast/star.svg" alt="star">
+          <img class="name-star-small" src="assets/imgs/cast/star.svg" alt="star-small">
+          <img class="name-star-smallest" src="assets/imgs/cast/star.svg" alt="star-smallest">
         </div>
+
 
         <picture>
           <source srcset="{{character.images.main}}.webp" type="image/webp">
           <source srcset="{{character.images.main}}.png" type="image/png">
-          <img mat-card-image class="w-full object-cover object-center rounded-lg shadow-md"
-            src="{{character.images.main}}.png" alt="{{character.name.show}}">
+          <img mat-card-image class="character-img" src="{{character.images.main}}.png" alt="{{character.name.show}}"
+            width="300px" height="auto">
         </picture>
       </div>
     </mat-grid-tile>
