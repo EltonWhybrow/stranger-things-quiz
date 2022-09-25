@@ -10,7 +10,9 @@
     },
     "lowdown": "<p>Joyce Byers is depicted as a kind, caring and sometimes frazzled single mom to her sons Jonathan and Will. She works at a general store in downtown Hawkins. It is implied she has had a history of mental breakdowns.</p><p>When her son Will goes missing, Joyce immediately alerts Hawkins Chief of Police Jim Hopper, who was a classmate of hers in high school. At first, Hopper dismisses her concerns, suggesting Will might be with his father Lonnie. Hopper later becomes convinced Will is missing after finding the boy's bicycle abandoned in the woods the kids call Mirkwood.</p>",
     "gender": "Female",
-    "occupation": "Melvald's General Store employee",
+    "occupation": [
+      "Melvald's General Store employee"
+    ],
     "nicknames": [],
     "sayings": [
       "Maybe I'm crazy, maybe I'm out of my mind!",
@@ -30,7 +32,9 @@
     },
     "lowdown": "<p>Jim Hopper, nicknamed \"Hop\", is the chief of Hawkins Police Department. Hopper has lived in Hawkins nearly all his life, having attended high school with Joyce Byers and Bob Newby. Hopper served in the Chemical Corps during the Vietnam War, where he worked with Agent Orange, an experience he believes to have led to his daughter Sara's fatal illness.</p><p> Hopper was married to Diane and they had a daughter together, Sara. They divorced after his young daughter died of cancer, which caused him to lapse into alcohol and drug addiction to cope with the grief. For a few years after Sara's death, he was a homicide detective in New York City, before moving back to Hawkins. Eventually, he grows to be more responsible, saving Will Byers as well as taking Eleven in as his adopted daughter.</p>",
     "gender": "Male",
-    "occupation": "Police chief",
+    "occupation": [
+      "Police chief"
+    ],
     "nicknames": [
       "Hop",
       "Chief-O",
@@ -55,7 +59,9 @@
     },
     "lowdown": "<p>At the beginning of the series, Mike is playing Dungeons & Dragons with his best friends, Dustin Henderson (Gaten Matarazzo), Lucas Sinclair (Caleb McLaughlin), and Will Byers (Noah Schnapp) on November 6, 1983. That night, Will mysteriously disappears.[4] The next day, Mike, Dustin, and Lucas find a girl with a shaved head named Eleven (Millie Bobby Brown). They take Eleven back to Mike's house and hide her in his basement.</p><p>Later, Will's corpse is apparently found. After Will's funeral, the boys ask their teacher, Mr. Clarke, about alternate dimensions, and determine that a gate to another dimension would have a strong electromagnetic field, and they can use a compass to find it, the \"Upside Down.\" They eventually find out that Eleven was tampering with the compass to keep them from going to the lab.</p>",
     "gender": "Male",
-    "occupation": "Student a Hawkins Junior School",
+    "occupation": [
+      "Student a Hawkins Junior School"
+    ],
     "nicknames": [
       "Dungeon Master"
     ],
@@ -77,7 +83,9 @@
     },
     "lowdown": "<p>Eleven is the daughter of Teresa \"Terry\" Ives, and a participant in the Project MKUltra experiments conducted by the Central Intelligence Agency (CIA). Eleven appears to have been born a psychic with notable telekinetic and extrasensory abilities. However, when she uses these abilities to a significant degree, she becomes temporarily weakened and her nose bleeds. </p><p>At birth, Eleven was taken away from her mother by Dr. Martin Brenner and was raised in a national laboratory in fictional Hawkins, Indiana, as a test subject, in order to develop her psychokinetic skills. When placed in a sensory deprivation tank, she can use remote viewing to access other dimensions, primarily for the purposes of international espionage. Eleven unknowingly opens a gate between the Hawkins National Laboratory and an alternate dimension called the Upside Down that allows creatures from either side to pass through.</p>",
     "gender": "Female",
-    "occupation": "Mind bending",
+    "occupation": [
+      "Mind bending"
+    ],
     "nicknames": [
       "El"
     ],
@@ -100,7 +108,9 @@
     },
     "lowdown": "<p>Dustin Henderson, only child of Claudia Henderson, is a friend of Mike, Will, and Lucas, is a goofy and quick-witted boy whose cleidocranial dysplasia causes him to lisp. In the Dungeons and Dragons party, Dustin is the Bard and has arguably the most extensive knowledge of the game, particularly the monsters. He has a crush on Nancy, and while both he and Lucas have feelings for Max in season two, Lucas and Max ultimately end up together. He also befriends Steve, who gives him advice on how to make girls like him.</p><p> Prior to season three, Dustin spends a month at a science camp and, thanks to Steve's advice, is able to get a girlfriend, Suzie, whom he claims is a genius and is \"hotter than Phoebe Cates.\" His friends are skeptical as to whether or not she actually exists as he is unable to get in contact with her over his makeshift radio tower, \"Cerebro.\" Dustin instead discovers the coded Russian transmission and, along with Steve, Robin, and Erica, ventures into the Russian's underground lair. He later proves Suzie's existence when he contacts her for Planck's constant in the season finale.</p>",
     "gender": "Male",
-    "occupation": "Student a Hawkins Junior School",
+    "occupation": [
+      "Student a Hawkins Junior School"
+    ],
     "nicknames": [
       "Compass Genius",
       "Dusty",
@@ -127,7 +137,9 @@
     },
     "lowdown": "<p>Lucas Charles Sinclair (portrayed by Caleb McLaughlin[7]) is the oldest child of Sue and Charles Sinclair, older brother to Erica, and a friend of Mike, Will, and Dustin. Lucas is wary of Eleven at first, but befriends her later.</p><p>In season two, he becomes a love interest for Max. In their Dungeons and Dragons party, Lucas is the ranger. He is very skilled with the use of a slingshot, which the party calls \"The Wrist Rocket\"; in the first two seasons, the slingshot is used for comedic effect as a hopeless last-minute defense, but in the third season, is used to save the team from danger.</p><p> In high school, Lucas joins the Hellfire Club and the basketball team but struggles to make time for both clubs. At the cemetery, he, along with Dustin and Steve, helps Max escape Vecna and comforts her after she escapes.</p>",
     "gender": "Male",
-    "occupation": "Student a Hawkins Junior School",
+    "occupation": [
+      "Student a Hawkins Junior School"
+    ],
     "nicknames": [
       "Stalker"
     ],
@@ -151,7 +163,9 @@
     },
     "lowdown": "<p>Will, the younger brother of Jonathan Byers and the son of Joyce Byers and Lonnie Byers, is a shy, kind, and often timid boy. In the group's Dungeons and Dragons party, Will is the cleric, but later occasionally plays the role of Dungeon Master; he is referred to as \"Will the Wise\". In November 1983, he vanishes somewhere near \"Mirkwood\" after encountering the monster that escaped through a rift to the \"Upside Down\", an alternate dimension discovered by the Hawkins Laboratory scientists.</p><p>Will begins communicating with Joyce through lightbulbs, so Joyce arranges a setup so Will can light up lights next to letters to spell sentences. When Jim Hopper and Joyce venture into the Upside Down to find him unconscious, they revive him with CPR and bring him back to the real world, but he still has side effects from his time in the alternate dimension, including a slug emerging from his mouth, visions of the Upside Down, and a connection to the Mind Flayer.</p>",
     "gender": "Male",
-    "occupation": "Student a Hawkins Junior School",
+    "occupation": [
+      "Student a Hawkins Junior School"
+    ],
     "nicknames": [
       "Will the Wise"
     ],
@@ -174,7 +188,9 @@
     },
     "lowdown": "<p>Nancy Wheeler is the oldest daughter of Karen and Ted Wheeler and the older sister of Mike and Holly. Nancy is something of an outcast at school until Steve Harrington takes an interest in her. Their relationship lasts until the ending of season two when she starts dating Jonathan after a little help from Murray. She is very proficient with firearms, despite a noticeable lack of training or practice. She has been seen using pistols, revolvers, rifles and shotguns.</p><p>In the third season, Nancy and Jonathan work as interns at the Hawkins Post, where Nancy is subject to workplace harassment and sexual discrimination from her male superiors. She and Jonathan are eventually fired for pursuing a story against their editor's wishes, but Nancy continues to investigate the case, which leads her to multiple encounters with the Flayed being controlled by the Mind Flayer from the Upside Down through Billy.</p>",
     "gender": "Female",
-    "occupation": "Student a Hawkins Junior School",
+    "occupation": [
+      "Student a Hawkins Junior School"
+    ],
     "nicknames": [
       "Nance"
     ],
@@ -196,7 +212,9 @@
     },
     "lowdown": "<p>Jonathan Byers (portrayed by Charlie Heaton) is the older brother of Will and the oldest son of Joyce. He is shy and reserved, and is considered an outsider at Hawkins High. He is an aspiring photographer, and very close with his mother and brother. Jonathan starts dating Nancy at the end of season two. They both become interns at the Hawkins Post in season three, but are eventually fired by their editor for pursuing a story. He helps his friends defeat the Mind Flayer before he and his family decide to move to Lenora Hills, California.</p>",
     "gender": "Male",
-    "occupation": "Student a Hawkins Junior School",
+    "occupation": [
+      "Student a Hawkins Junior School"
+    ],
     "nicknames": [],
     "sayings": [
       "Sometimes, people don't really say what they're really thinking. When you capture the right moment, it says more."
@@ -213,12 +231,14 @@
       "main": "assets/imgs/cast/CaraBuono",
       "details": "assets/imgs/cast/CaraBuono-details"
     },
-    "lowdown": "<p></p>",
+    "lowdown": "<p>Karen Wheeler is the mother of Nancy, Mike and Holly and wife of Ted. Although a loving mother at heart, she remains largely clueless about her children's activities up until the destruction of Hawkins by Vecna, and often tries to directly connect with them rather than trying to understand them. Nancy believes she only married her husband to fit the image of a nuclear family.</p><p>At the end of the second season and the beginning of the third, she develops a sexual attraction towards Billy Hargrove, partly out of boredom with her husband, but ultimately decides against acting on these feelings to avoid splitting her family apart; her brief submission to them, however, indirectly results in Billy being possessed by the Mind Flayer. Later, she finally connects with Nancy by encouraging her to continue pursuing the story she was fired for working on against her editor's orders.</p>",
     "gender": "Female",
-    "occupation": "",
+    "occupation": [
+      "Unemployed"
+    ],
     "nicknames": [],
     "sayings": [
-      ""
+      "Well, wherever you get it from, I'm proud of you . . . That you stood up for yourself! That you stood up to those - SHITHEADS!"
     ],
     "id": 10,
     "idString": "karen-wheeler"
@@ -232,12 +252,17 @@
       "main": "assets/imgs/cast/MatthewModine",
       "details": "assets/imgs/cast/MatthewModine-details"
     },
-    "lowdown": "<p></p>",
-    "gender": "Female",
-    "occupation": "",
+    "lowdown": "<p>Dr. Martin Brenner referred to as \"Papa\" by Eleven and the other children he experimented on, is the head scientist of Hawkins Laboratory and the experiments performed there. He is a callous and manipulative scientist, having abducted Eleven from her mother, Terry Ives, whom he later subjected to electroshock therapy to destroy the woman's mind and thoughts. Brenner then put Eleven through numerous experiments, one of which saw her use her abilities to accidentally establish a link to the Upside Down. </p><p>After Eleven escapes the lab, Brenner and his team hunt for her throughout Hawkins while covering up the actions of the Demogorgon they unknowingly let loose. Brenner is apparently killed by the Demogorgon in the first-season finale, though a former worker named Ray claimed Brenner was still alive during his attempt to plea for his life to Eleven and Kali.</p>",
+    "gender": "Male",
+    "occupation": [
+      "Research Scientist for the Department of Energy"
+    ],
     "nicknames": [],
     "sayings": [
-      ""
+      "Will you trust me?",
+      "If we told you, it would ruin the surprise.",
+      "What have you done? What... have you done?",
+      "Only by facing all of ourselves, the good and the bad, can we become whole."
     ],
     "id": 11,
     "idString": "martin-brenner"
@@ -251,12 +276,16 @@
       "main": "assets/imgs/cast/SadieSink",
       "details": "assets/imgs/cast/SadieSink-details"
     },
-    "lowdown": "<p></p>",
+    "lowdown": "<p>Maxine 'Max' Mayfield, portrayed by Sadie Sink, is a main character in Stranger Things, being introduced in the second season. A newcomer to the Party, and the stepsister of Billy Hargrove, she is best friends with Will Byers, Dustin Henderson, Jane \"Eleven\" Hopper, Lucas Sinclair and Mike Wheeler; she also has an on-and-off romantic relationship with Lucas.</p>",
     "gender": "Female",
-    "occupation": "",
+    "occupation": [
+      "Student a Hawkins Junior School"
+    ],
     "nicknames": [],
     "sayings": [
-      ""
+      "Yeah, well, boyfriends lie. All. The. Time.",
+      "I like talking with you too, stalker.",
+      "If I play, do I get one of those cool T-shirts?"
     ],
     "id": 12,
     "idString": "max-mayfield"
@@ -270,12 +299,21 @@
       "main": "assets/imgs/cast/JoeKeery",
       "details": "assets/imgs/cast/JoeKeery-details"
     },
-    "lowdown": "<p></p>",
-    "gender": "Female",
-    "occupation": "",
-    "nicknames": [],
+    "lowdown": "<p>Steve is initially portrayed as a stereotypical 1980s popular jock, antagonistic and unlikable. Steve had been dating Nancy Wheeler but after he harasses Jonathan Byers by breaking his camera, Nancy seems to become close to Jonathan. Steve accosts Jonathan, but Jonathan beats him in a fight and Steve sees the error of his ways and ignores his former \"friends\". Traveling to the Byers' home to apologize, he becomes involved in Nancy and Jonathan's fight against the Demogorgon, which they defeat. At the conclusion of the season, Nancy buys Jonathan a new camera and Steve continues his relationship with Nancy.</p>",
+    "gender": "Male",
+    "occupation": [
+      "Student a Hawkins High School",
+      "Employee at Scoops Ahoy"
+    ],
+    "nicknames": [
+      "King Steve",
+      "Steve 'The Hair' Harrington",
+      "Dingus (by Robin)"
+    ],
     "sayings": [
-      ""
+      "I'm stealthy, like a ninja.",
+      "She's only gonna break your heart, and you're way too young for that.",
+      "Always the god damn babysitter!"
     ],
     "id": 13,
     "idString": "steve-harrington"
@@ -289,12 +327,17 @@
       "main": "assets/imgs/cast/DacreMontgomery",
       "details": "assets/imgs/cast/DacreMontgomery-details"
     },
-    "lowdown": "<p></p>",
+    "lowdown": "<p>William \"Billy\" Hargrove (portrayed by Dacre Montgomery; seasons 2-3; guest season 4) is the careless, rash, and overly protective stepbrother of Max. His own behavior is revealed to be a consequence of the physical abuse he himself is subjected to by his father. </p><p>In season three, he becomes the main host for the Mind Flayer. Eleven, having looked into his memories earlier, reminds Billy of his happy memories with his mother, allowing him to break free from the possession and sacrifice himself to save Eleven from the Mind Flayer. After the Mind Flayer is defeated, Billy apologizes to Max for all his wrongdoings as he dies in Max's arms. </p><p>In season four, Billy appears as a hallucination when Max is put into a trance by Vecna, where Billy blames her for his death. Max reveals that a part of her is happy that he died but that she still cared about him and loved him.</p>",
     "gender": "Male",
-    "occupation": "",
+    "occupation": [
+      "Lifeguard at Hawkins Community Pool",
+      "Student at Hawkins High School"
+    ],
     "nicknames": [],
     "sayings": [
-      ""
+      "I've been waiting to meet this \"King Steve\" everyone's been telling me so much about!",
+      "Don't be afraid. It'll all be over soon. Just try to hold still...",
+      "You are so dead, Sinclair. You're dead."
     ],
     "id": 14,
     "idString": "billy-hargrove"
@@ -308,12 +351,17 @@
       "main": "assets/imgs/cast/SeanAstin",
       "details": "assets/imgs/cast/SeanAstin-details"
     },
-    "lowdown": "<p></p>",
+    "lowdown": "<p>In October of 1984, Bob and Joyce were infatuated with one another, with Bob seeing a future with her and her sons by proposing moving out of Hawkins to start somewhere new. However, his plan was delayed when Joyce's son, Will, began having memory issues and seizures, related to a tunnel slowly growing in Hawkins. While tending to Will at the Hawkins National Laboratory, strange dog-like creatures from the tunnel began attacking the lab, trapping the Byers and others inside. Using his computer skills to turn off the security system, Bob helped Joyce and the others escape, but was unfortunately mauled to death in front of her by a juvenile Demogorgon.</p>",
     "gender": "Male",
-    "occupation": "",
-    "nicknames": [],
+    "occupation": [
+      "Manager of RadioShack"
+    ],
+    "nicknames": [
+      "Bob the Brain"
+    ],
     "sayings": [
-      ""
+      "Easy-peasy, right?",
+      "It's gonna be okay. Remember, Bob Newby, superhero."
     ],
     "id": 15,
     "idString": "bob-newby"
@@ -327,12 +375,15 @@
       "main": "assets/imgs/cast/PaulReiser",
       "details": "assets/imgs/cast/PaulReiser-details"
     },
-    "lowdown": "<p></p>",
+    "lowdown": "<p>Dr. Sam Owens is a United States Department of Energy executive who replaces Brenner at Hawkins Laboratory. Owens is as committed to science research and stubborn as his predecessor, but much more empathetic to the residents of Hawkins Lab. Owens is in charge of studying and treating Will's lingering traumatic episodes from the Upside Down. He is fired from the lab at the end of season two after it is attacked by monsters at the Upside Down, and provides Hopper with a birth certificate for Eleven naming her Hopper's adopted daughter. </p><p>In 1984, He oversaw the management and study of the Mothergate, but despite his best efforts, he was unable to stop the Upside Down's incursion, or prevent the Mind Flayer from possessing Will Byers. He oversaw a failed mission to destroy the Hawkins Tunnel System, but refrained from attempting it again due to the fact that Will would die if it was destroyed. Soon, demodogs invaded the lab.</p>",
     "gender": "Male",
-    "occupation": "",
+    "occupation": [
+      "Director of Operations at Hawkins Lab"
+    ],
     "nicknames": [],
     "sayings": [
-      ""
+      "For better or worse, I am the schmuck they brought in to make things better.",
+      "Never too late in the day for breakfast, that's what I say."
     ],
     "id": 16,
     "idString": "sam-owens"
@@ -346,12 +397,16 @@
       "main": "assets/imgs/cast/MayaHawke",
       "details": "assets/imgs/cast/MayaHawke-details"
     },
-    "lowdown": "<p></p>",
+    "lowdown": "<p> Robin began working at the newly-built Starcourt Mall's ice cream parlor, Scoops Ahoy, alongside her former classmate, Steve Harrington. Robin often made Steve the butt of many jokes due to his fleeting popularity and failure to attract any female customers.</p><p> When Steve and his friend Dustin Henderson attempted to crack an intercepted Russian code, Robin assisted through her knowledge of many languages. She figured out that Russians were using the mall's food chains and businesses to smuggle supplies into Hawkins. Eventually, the three discovered that the Soviets had carried out an elaborate scheme; Starcourt Mall was merely a front to conceal the construction of an underground Soviet base. With the assistance of Erica Sinclair, the group snuck into the base, where they discovered the Soviets had developed a means to travel to another dimension.</p>",
     "gender": "Female",
-    "occupation": "",
+    "occupation": [
+      "Student a Hawkins High School"
+    ],
     "nicknames": [],
     "sayings": [
-      ""
+      "Hey dingus! Your children are here.",
+      "I can't believe I'm gonna die in a secret Russian base with Steve 'The Hair' Harrington.",
+      "I feel like my whole life has been one big error."
     ],
     "id": 17,
     "idString": "robin-buckley"
@@ -365,12 +420,16 @@
       "main": "assets/imgs/cast/PriahFerguson",
       "details": "assets/imgs/cast/PriahFerguson-details"
     },
-    "lowdown": "<p></p>",
+    "lowdown": "<p>Erica Sinclair (portrayed by Priah Ferguson; season 3–present; recurring season 2) is Sue and Charles Sinclair's youngest child and is Lucas' younger sister.[18] Introduced in the second season as a recurring character, she was promoted to series regular in the third season. She aids Dustin, Steve, and Robin in infiltrating the Russian base beneath Starcourt Mall. During these events, Dustin convinces Erica that, like himself and his friends, she is a nerd and that she should embrace that. </p><p>At the end of the third season, she is given Will's Dungeons & Dragons manuals. She is very snarky, foul-mouthed, sassy and often thinks of Lucas and his friends as nerds, though she can also be nice at times. In season four, she has embraced her nerdy side and joins the Hawkins High School's Hellfire Club in her brother's place after demonstrating proficient knowledge of Dungeons & Dragons. She serves as a lookout and communicator between the many groups in their plan to defeat Vecna.</p>",
     "gender": "Female",
-    "occupation": "",
+    "occupation": [
+      "Student at Hawkins Middle School["
+    ],
     "nicknames": [],
     "sayings": [
-      ""
+      "Free ice cream. For, Life.",
+      "Bunch of nerds",
+      "I'm eleven, you long-haired freak"
     ],
     "id": 18,
     "idString": "robin-buckley"
@@ -384,12 +443,17 @@
       "main": "assets/imgs/cast/BrettGelman",
       "details": "assets/imgs/cast/BrettGelman-details"
     },
-    "lowdown": "<p></p>",
+    "lowdown": "<p>A former investigative journalist for the Chicago Sun-Times, Bauman was hired by the Hollands in 1984 to investigate their daughter Barbara Holland's disappearance the previous year. His research leads him to believe either (a) the events of the previous year were caused by UFO activity, or (b) that there is a Russian invasion taking place in Hawkins, due to finding leads about a mysterious girl with a shaved head.</p><p> But the chief of Hawkins police, Jim Hopper, remains skeptical and shuns him. Nancy Wheeler, Barbara's best friend, and her friend Jonathan Byers go to Murray's home to take down Hawkins Laboratory, and explain the prior year's events to Murray. This includes an explanation of Barbara Holland's disappearance. Murray assists the pair into taking down the lab by releasing tapes to the media, containing a watered down version of Dr. Sam Owens's confession. Murray questions why the two aren't together romantically, laughing at their resistance to enter a relationship and giving them the advice to stop avoiding their feelings. </p>",
     "gender": "Male",
-    "occupation": "",
-    "nicknames": [],
+    "occupation": [
+      "Private Investigator Investigative Journalist"
+    ],
+    "nicknames": [
+      "Bald Eagle (codename)",
+      "Freud"
+    ],
     "sayings": [
-      ""
+      "My fingers are like arrows. My arms, like iron. My feet, like spears. Resist, and I will end you."
     ],
     "id": 19,
     "idString": "murray-bauman"
@@ -403,12 +467,16 @@
       "main": "assets/imgs/cast/EduardoFranco",
       "details": "assets/imgs/cast/EduardoFranco-details"
     },
-    "lowdown": "<p></p>",
+    "lowdown": "<p>Argyle (portrayed by Eduardo Franco; also starring season 4) is a student at Lenora Hills High School, where Eleven, Will, and Jonathan now attend in Lenora Hills, California.Argyle becomes Jonathan's best friend, and he provides Jonathan needed counsel, helping him relax with his stoner mentality. He works as a pizza delivery driver for Surfer Boy Pizza. When U.S. Army soldiers attack the Byers home in search of Eleven, Argyle provides getaway transportation for Mike, Will, and Jonathan. He goes on to join the boys in their own attempt to find her. During their travels, they seek help from Dustin's long-distance girlfriend Suzie in Salt Lake City, and Argyle falls in love with the hacker's older sister, Eden. Argyle is pivotal in the California Crew's efforts to aid the Hawkins Gang's plot to defeat Vecna, helping create a sensory deprivation tank for Eleven at a Surfer Boy Pizza location in Nevada. He then accompanies Eleven, Mike, Will, and Jonathan back to Hawkins</p>",
     "gender": "Male",
-    "occupation": "",
+    "occupation": [
+      "Student at Lenora Hills High School",
+      "Employee at Surfer Boy Pizza"
+    ],
     "nicknames": [],
     "sayings": [
-      ""
+      "Oh, my God, why is that guy holding a gun?!",
+      "My dudes! My dudes!"
     ],
     "id": 20,
     "idString": "argyle"
@@ -422,12 +490,23 @@
       "main": "assets/imgs/cast/JosephQuinn",
       "details": "assets/imgs/cast/JosephQuinn-details"
     },
-    "lowdown": "<p></p>",
+    "lowdown": "<p>Edward \"Eddie\" Munson (portrayed by Joseph Quinn; also starring season 4) is an eccentric Hawkins High School student and president of Hawkins High's Dungeons & Dragons-themed \"Hellfire Club\", where he befriends Mike and Dustin. He lives with his uncle, Wayne Munson, and while the two are not seen onscreen together, it is made clear that their relationship is very close.</p><p> While selling drugs to Chrissy Cunningham, Eddie watches as Vecna telepathically kills Chrissy. Realizing that the authorities will not believe his story, Eddie goes on the run and is later located by Dustin, Steve, Max, and Robin, who explain to him the existence of the Upside Down. </p><p>The local police name Eddie as their chief suspect in Vecna's murders. The school basketball team, led by Chrissy's boyfriend Jason Carver, attempts to hunt him down, with Jason believing Eddie to be the leader of a Satanic cult. The group of friends realize they must work to clear Eddie's name...</p>",
     "gender": "Male",
-    "occupation": "",
-    "nicknames": [],
+    "occupation": [
+      "Student at Hawkins Middle School",
+      "Leader of Corroded Coffin",
+      "Student at Hawkins High School",
+      "Leader of the Hellfire Club"
+    ],
+    "nicknames": [
+      "Eddie \"The Freak\" Munson",
+      "Long-Haired Freak",
+      "Eddie the Banished"
+    ],
     "sayings": [
-      ""
+      "So uh, this place is like Hawkins with monsters and nasty shit?",
+      "Studies link violent behavior to the game, saying it promotes satanic worship, ritual sacrifice, sodomy, suicide, and even... murder!",
+      "There is no shame in running. Don't try to be heroes. Not today."
     ],
     "id": 21,
     "idString": "eddie-manson"

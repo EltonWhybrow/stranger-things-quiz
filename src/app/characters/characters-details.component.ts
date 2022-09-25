@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { ICharacter } from '../shared/character.interface';
 import { HttpService } from '../shared/http-service.service';
@@ -12,7 +12,9 @@ export class CharactersDetailsComponent implements OnInit {
   characterId: any;
   characterDetails: ICharacter | undefined;
 
-  constructor(private http: HttpService, private route: ActivatedRoute) { }
+  constructor(
+    private http: HttpService,
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     /*
@@ -32,4 +34,5 @@ export class CharactersDetailsComponent implements OnInit {
 
     });
   }
+
 }

@@ -23,6 +23,9 @@ export class CharactersComponent implements OnInit {
   ngOnInit(): void {
     this.showCharacters$ = this.httpService.getCharacters();
 
+    /*
+    Angualr Material breakpoint grid setting
+    */
     this.responsive.observe([
       // Breakpoints.TabletLandscape,
       // Breakpoints.TabletPortrait,
