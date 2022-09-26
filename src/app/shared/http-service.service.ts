@@ -29,7 +29,7 @@ export class HttpService {
     return this.http.get<IShowInfo[]>('./assets/data/st-info.json')
       .pipe(
         map(info => info),
-        tap(info => console.log("info: " + JSON.stringify(info))),
+        // tap(info => console.log("info: " + JSON.stringify(info))),
         catchError(this.handleError<any>([]))
       );
   }
