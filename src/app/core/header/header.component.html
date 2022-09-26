@@ -29,6 +29,11 @@
         class="button">
         About
       </button>
+      <button mat-stroked-button color="accent" (click)="changeTheme()" aria-label="Change theme" class="button"
+        title="Change background">
+        <mat-icon>collections</mat-icon>
+      </button>
+
 
     </div>
 
@@ -89,7 +94,7 @@
         <li>
           <button mat-stroked-button color="accent" routerLink="/about" routerLinkActive="is-active"
             aria-label="show quiz" class="button mat-display-1" (click)="this.burgerActive = false;">
-            Quiz
+            about
           </button>
         </li>
       </ul>

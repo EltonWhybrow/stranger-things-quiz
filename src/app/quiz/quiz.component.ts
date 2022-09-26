@@ -21,17 +21,17 @@ export class QuizComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllQuestions();
-    this.getStartedModal();
+    // this.getStartedModal();
   }
 
 
-  getStartedModal() {
-    const myCompDialog = this.dialog.open(MyDialogComponent, { data: this.modalText });
-    myCompDialog.afterClosed().subscribe((res) => {
-      // Data back from dialog
-      console.log({ res });
-    });
-  }
+  // getStartedModal() {
+  //   const myCompDialog = this.dialog.open(MyDialogComponent, { data: this.modalText });
+  //   myCompDialog.afterClosed().subscribe((res) => {
+  //     // Data back from dialog
+  //     console.log({ res });
+  //   });
+  // }
 
   getAllQuestions() {
     this.httpService.getQuestions()
