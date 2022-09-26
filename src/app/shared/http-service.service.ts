@@ -20,7 +20,7 @@ export class HttpService {
     return this.http.get<IQuestions[]>('./assets/data/st-questions.json')
       .pipe(
         map(questions => questions),
-        tap(questions => console.log("questions>>>>>>>: " + JSON.stringify(questions))),
+        // tap(questions => console.log("questions>>>>>>>: " + JSON.stringify(questions))),
         catchError(this.handleError<any[]>([]))
       );
   }
