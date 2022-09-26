@@ -17,7 +17,7 @@ export class HttpService {
 
   // TODO: implement as Angualar resolvers if time to enhance user experience
   getQuestions(): Observable<IQuestions[]> {
-    return this.http.get<IQuestions[]>('../../assets/data/st-questions.json')
+    return this.http.get<IQuestions[]>('./assets/data/st-questions.json')
       .pipe(
         map(questions => questions),
         tap(questions => console.log("questions>>>>>>>: " + JSON.stringify(questions))),
@@ -26,7 +26,7 @@ export class HttpService {
   }
 
   getShowInfo(): Observable<IShowInfo[]> {
-    return this.http.get<IShowInfo[]>('../../assets/data/st-info.json')
+    return this.http.get<IShowInfo[]>('./assets/data/st-info.json')
       .pipe(
         map(info => info),
         tap(info => console.log("info: " + JSON.stringify(info))),
@@ -35,7 +35,7 @@ export class HttpService {
   }
 
   getCharacters(): Observable<ICharacter[]> {
-    return this.http.get<ICharacter[]>('../../assets/data/st-characters.json')
+    return this.http.get<ICharacter[]>('./assets/data/st-characters.json')
       .pipe(
         map(characters => characters),
         // tap(characters => console.log("characters: " + JSON.stringify(characters))),
@@ -44,7 +44,7 @@ export class HttpService {
   }
 
   getCharacterDetails(id: string): Observable<ICharacter> {
-    return this.http.get<any>('../../assets/data/st-characters.json').pipe(
+    return this.http.get<any>('./assets/data/st-characters.json').pipe(
       map(character => character.filter((data: any) => data.idString === id)),
       // tap(character => console.log("One character: " + JSON.stringify(character))),
       catchError(this.handleError<ICharacter>())

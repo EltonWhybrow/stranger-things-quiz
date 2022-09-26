@@ -5,7 +5,7 @@
       "real": "Winona Ryder"
     },
     "images": {
-      "main": "assets/imgs/cast/WinonaRyder",
+      "main": "./assets/imgs/cast/WinonaRyder",
       "details": "assets/imgs/cast/WinonaRyder-details"
     },
     "lowdown": "<p>Joyce Byers is depicted as a kind, caring and sometimes frazzled single mom to her sons Jonathan and Will. She works at a general store in downtown Hawkins. It is implied she has had a history of mental breakdowns.</p><p>When her son Will goes missing, Joyce immediately alerts Hawkins Chief of Police Jim Hopper, who was a classmate of hers in high school. At first, Hopper dismisses her concerns, suggesting Will might be with his father Lonnie. Hopper later becomes convinced Will is missing after finding the boy's bicycle abandoned in the woods the kids call Mirkwood.</p>",
