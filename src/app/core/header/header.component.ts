@@ -18,7 +18,9 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (localStorage.getItem("theme")) {
+    if (!localStorage.getItem("theme")) {
+      this.document.body.classList.add("theme-2");
+    } else {
       this.document.body.classList.add(this.currentTheme);
     }
   }

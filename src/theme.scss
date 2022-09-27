@@ -1,4 +1,5 @@
 // Import library functions for theme creation.
+@use "../node_modules/@angular/material" as mat;
 @import "../node_modules/@angular/material/theming";
 // Include non-theme styles for core.
 @include mat-core();
@@ -6,8 +7,7 @@
 // Define your application's custom theme.
 $my-primary: mat-palette($mat-brown);
 $my-accent: mat-palette($mat-lime);
-// $primary: mat-palette($mat-indigo);
-// $accent: mat-palette($mat-pink, A200, A100, A400);
+// $accent: mat-palette($mat-pink, A200, A100, A400); A shite was failing???
 $theme: mat-light-theme($my-primary, $my-accent);
 
 // Define a mixin that accepts a theme and outputs the theme-specific styles.
@@ -20,46 +20,42 @@ $theme: mat-light-theme($my-primary, $my-accent);
   // Get a contrast color for a hue by adding `-contrast` to any other key.
   // border-color: mat-color($primary, "100-contrast");
   // See https://material.io/archive/guidelines/style/color.html#color-color-palette for hues.
-  // Get a relative color for a hue ('lighter' or 'darker')
+
+  // Custom styles
   .highlight-para {
     color: mat-color($accent);
-    outline-color: mat-color($accent);
   }
+
   .text-link {
     color: mat-color($accent, 800);
   }
 
-  // burger bits
   #nav-burger-ani span {
     background-color: mat-color($accent);
   }
 }
 
-// Typograpghy mixin custom
-// @mixin stranger-things-typography($config) {
-//   .highlight-para {
-//     font: {
-//       family: mat-font-family($config, body-1);
-//       size: mat-font-size($config, body-1);
-//       weight: mat-font-weight($config, body-1);
-//     }
-//   }
-// }
+// Typograpghy custom
+$st-custom-typography: mat.define-typography-config(
+  // TODO: https://material.angular.io/guide/typography
+  $font-family: "Roboto",
+  $display-4: mat-typography-level(112px, 112px, 300),
+  $display-3: mat-typography-level(56px, 56px, 400),
+  $display-2: mat-typography-level(45px, 48px, 400),
+  $display-1: mat-typography-level(34px, 40px, 400),
+  $headline: mat-typography-level(24px, 32px, 400),
+  $title: mat-typography-level(20px, 32px, 500),
+  $subheading-2: mat-typography-level(16px, 28px, 400),
+  $subheading-1: mat-typography-level(15px, 24px, 400),
+  $body-2: mat-typography-level(14px, 24px, 500),
+  $body-1: mat-typography-level(14px, 20px, 400),
+  $caption: mat-typography-level(12px, 20px, 400),
+  $button: mat-typography-level(14px, 14px, 500),
+  $input: mat-typography-level(inherit, 1.125, 400)
+);
 
-// @use "@angular/material" as mat;
-
-// $my-custom-typography-config: mat.define-typography-config(
-//   $display-4:
-//     mat.define-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
-//   $display-3:
-//     mat.define-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
-//   $display-2:
-//     mat.define-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
-//   $display-1: mat.define-typography-level(34px, 40px, 400),
-//   $headline: mat.define-typography-level(24px, 32px, 400),
-//   // ...
-// );
-
+// Include custom typography.
+@include mat.core($st-custom-typography);
 // Include theme styles for Angular Material components.
 @include angular-material-theme($theme);
 // Include theme styles for your custom components.

@@ -59,7 +59,7 @@
   },
   {
     "id": 6,
-    "question": "Who is the fist person from Hawkins Hgh School to die at the hands of The Demogorgon?",
+    "question": "Who is the first person from Hawkins Hgh School to die at the hands of The Demogorgon?",
     "possibleAnswers": [
       "Barbara Windsor",
       "Barcardi B",
@@ -105,15 +105,15 @@
   },
   {
     "id": 10,
-    "question": "Whick character admits they are scared of horror movies?",
+    "question": "Which character admits they are scared of horror movies?",
     "possibleAnswers": [
       "Eddie Munson",
-      "Sadie Sink",
+      "Max Mayfield",
       "Eleven",
       "Murray Murray Bauman",
       "Karen Wheeler"
     ],
-    "correctAnswer": "Sadie Sink"
+    "correctAnswer": "Max Mayfield"
   },
   {
     "id": 11,
