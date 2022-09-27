@@ -105,15 +105,15 @@
   },
   {
     "id": 10,
-    "question": "Whick character admits they are scared of horror movies?",
+    "question": "Which character admits they are scared of horror movies?",
     "possibleAnswers": [
       "Eddie Munson",
-      "Sadie Sink",
+      "Max Mayfield",
       "Eleven",
       "Murray Murray Bauman",
       "Karen Wheeler"
     ],
-    "correctAnswer": "Sadie Sink"
+    "correctAnswer": "Max Mayfield"
   },
   {
     "id": 11,
@@ -129,196 +129,103 @@
   },
   {
     "id": 12,
-    "question": "?",
+    "question": "Which character in the show enjoyed the most screentime from season 1-3?",
     "possibleAnswers": [
-      "1077",
-      "1150",
-      "1089",
-      "1126",
-      "1244",
-      "1999"
+      "Dustin Henderson",
+      "Steve Harrington",
+      "Eleven",
+      "Mike Wheeler",
+      "Nancy Wheeler",
+      "Jim Hooper"
     ],
-    "correctAnswer": 1077
+    "correctAnswer": "Eleven"
   },
   {
     "id": 13,
-    "question": "In 'Hell is Other Robots' Bender turns to which religion to help overcome his addiction?",
+    "question": "Was the show inspired by a true story?",
     "possibleAnswers": [
-      "League of Sciencology",
-      "Temple of Robotology",
-      "Church of Roboism",
-      "Order of Mechanology"
+      "Yes",
+      "No"
     ],
-    "correctAnswer": "Temple of Robotology"
+    "correctAnswer": "Yes"
   },
   {
     "id": 14,
-    "question": "Which of the following is not a member of the Ultimate Robot Fighting League?",
+    "question": "What US state is the show set in?",
     "possibleAnswers": [
-      "The Clearcutter",
-      "Millionaire Bot",
-      "Sergeant Feces Processor",
-      "The Chain Smoker",
-      "The Gender Bender"
+      "Ohio",
+      "West Virgina",
+      "Illinos",
+      "Indiana",
+      "Missouri"
     ],
-    "correctAnswer": "Millionaire Bot"
+    "correctAnswer": "Indiana"
   },
   {
     "id": 15,
-    "question": "In 'The Cryonic Woman' what was the name of the leader of the feral adolescents that challenges Fry at Deathrolling?",
+    "question": "In what year does the first season take place?",
     "possibleAnswers": [
-      "Butch",
-      "Zed",
-      "Spike",
-      "Snake"
+      "1986",
+      "1989",
+      "1983",
+      "1980",
+      "1982"
     ],
-    "correctAnswer": "Zed"
+    "correctAnswer": "1982"
   },
   {
     "id": 16,
-    "question": "What rank does Kif hold in the DOOP?",
+    "question": "What is Max's favourite song that saves her from Vecna?",
     "possibleAnswers": [
-      "Sergeant",
-      "Captain",
-      "Lieutenant",
-      "Major"
+      "Sunny when Im chilled",
+      "Running up the field",
+      "Running up that Hill",
+      "Walking Jack n Jill"
     ],
-    "correctAnswer": "Lieutenant"
+    "correctAnswer": "Running up that Hill"
   },
   {
     "id": 17,
-    "question": "Who are the two recurring cops, often seen around New New York?",
+    "question": "Who is the military leader searching for Eleven?",
     "possibleAnswers": [
-      "Jonesy and ISP",
-      "Smitty and URL",
-      "Brady and Dotcom",
-      "Harry and Capslock"
+      "Lt. Colonel Jack Sullivan",
+      "Sgt. Fred Derst",
+      "Lt. Colonel Frank Sinner",
+      "Sgt. Jack Sparrow"
     ],
-    "correctAnswer": "Brady and Dotcom"
+    "correctAnswer": "Lt. Colonel Jack Sullivan"
   },
   {
     "id": 18,
-    "question": "In 'Insane in the Mainframe', who is Fry's room mate at the Asylum for Criminally Insane Robots before Roberto is moved in?",
+    "question": "Who asks Eleven to dance at the Hawkins Snow Ball in Season 2?",
     "possibleAnswers": [
-      "Joey Mousepad",
-      "Tinny Tim",
-      "Hedonismbot",
-      "Malfunctioning Eddie"
+      "Will",
+      "Mike",
+      "Dustin",
+      "Joyce"
     ],
-    "correctAnswer": "Malfunctioning Eddie"
+    "correctAnswer": "Mike"
   },
   {
     "id": 19,
-    "question": "Which product successfully uses a dream advert to market itself to Fry?",
+    "question": "What is the room the children play in at Hawkins National Laboratory called?",
     "possibleAnswers": [
-      "Slurm",
-      "Bachelor Chowm",
-      "Lightspeed Briefs",
-      "Mom's Robot Oil"
+      "The White Room",
+      "The Rainbow Room",
+      "The Play Pen",
+      "The Mind Trainer"
     ],
-    "correctAnswer": "Lightspeed Briefs"
+    "correctAnswer": "The Rainbow Room"
   },
   {
     "id": 20,
-    "question": "What was Fry's job in 1999?",
+    "question": "What new shopping centre is the main location used in Season 3?",
     "possibleAnswers": [
-      "Pizza Delivery Boy",
-      "Newspaper Delivery Boy",
-      "Milkman",
-      "Shoe Shine Boy",
-      "Postman"
+      "The Moonlight mall",
+      "Starcourt Mall",
+      "The Super Plaze",
+      "Plaze Court Shopping"
     ],
-    "correctAnswer": "Pizza Delivery Boy"
-  },
-  {
-    "id": 21,
-    "question": "What company does Dr. Farnsworth run?",
-    "possibleAnswers": [
-      "Space Express",
-      "FexEd",
-      "Earth Express",
-      "Planet Express",
-      "Federal Express"
-    ],
-    "correctAnswer": "Planet Express"
-  },
-  {
-    "id": 22,
-    "question": "Futurama was amlost called what?",
-    "possibleAnswers": [
-      "Doomsville or Aloha Mars",
-      "Lrrrenconcilable Ndndifferences",
-      "Futurella",
-      "World of Tomorrow"
-    ],
-    "correctAnswer": "Doomsville or Aloha Mars"
-  },
-  {
-    "id": 23,
-    "question": "What are the pest animals in New New York?",
-    "possibleAnswers": [
-      "Rats",
-      "Mutated Gators",
-      "Owls",
-      "Pigeons",
-      "Omicrons"
-    ],
-    "correctAnswer": "Owls"
-  },
-  {
-    "id": 24,
-    "question": "In Love's Labours In Space which club did Leela visit to find a partner?",
-    "possibleAnswers": [
-      "Club Extravaganza",
-      "Bubble Bar",
-      "Hip Joint",
-      "O'Gorgnaxs"
-    ],
-    "correctAnswer": "Hip Joint"
-  },
-  {
-    "id": 25,
-    "question": "In Fear of Bot Planet what fake religious robot holiday did Bender make up?",
-    "possibleAnswers": [
-      "Bot-Mitvah",
-      "Robanza",
-      "Robonukah",
-      "Robotisam"
-    ],
-    "correctAnswer": "Robonukah"
-  },
-  {
-    "id": 26,
-    "question": "In Fry and the Slurm Factory what did Fry and Bender use to look in the Slurm cans?",
-    "possibleAnswers": [
-      "X-Ray",
-      "Z-Ray",
-      "Lookamatic 5000",
-      "F-Ray"
-    ],
-    "correctAnswer": "Lookamatic 5000"
-  },
-  {
-    "id": 27,
-    "question": "What was the name of Fry's dog?",
-    "possibleAnswers": [
-      "Buster",
-      "I.C. Wiener",
-      "Robo-Dog",
-      "Seymour Asses"
-    ],
-    "correctAnswer": "Seymour Asses"
-  },
-  {
-    "id": 28,
-    "question": "What is Planet Express's Slogan?",
-    "possibleAnswers": [
-      "Our crew is replaceable. Your package isn't",
-      "Good news everyone",
-      "We are the fastest service, no matter how long it takes.",
-      "We will get it there, eventually.",
-      "If it ain't broke, we'll break it."
-    ],
-    "correctAnswer": "Our crew is replaceable. Your package isn't"
+    "correctAnswer": "Starcourt Mall"
   }
 ]
