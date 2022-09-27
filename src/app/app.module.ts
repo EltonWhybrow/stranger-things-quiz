@@ -12,6 +12,7 @@ import { BgColorDirective } from './shared/bg-color.directive';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { AboutComponent } from './about/about.component';
 import { MyDialogComponent } from './my-dialog/my-dialog.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MyDialogComponent } from './my-dialog/my-dialog.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

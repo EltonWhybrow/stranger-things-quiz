@@ -1,5 +1,6 @@
 import { Component, Inject, OnInit, Optional } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-my-dialog',
@@ -8,17 +9,16 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class MyDialogComponent implements OnInit {
 
-  fromPage!: string;
-  fromDialog!: string;
-
   constructor(
     public dialogRef: MatDialogRef<MyDialogComponent>,
-    @Optional() @Inject(MAT_DIALOG_DATA) public mydata: string
+    @Inject(MAT_DIALOG_DATA) public data: any,
   ) { }
 
-  ngOnInit(): void {
-    this.fromDialog = "I am from dialog land...";
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 
-  closeDialog() { this.dialogRef.close({ event: 'close', data: this.fromDialog }); }
+  ngOnInit(): void {
+  }
+
 }

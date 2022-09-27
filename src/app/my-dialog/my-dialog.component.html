@@ -1,3 +1,18 @@
-<h3>{{mydata}}</h3>
+<!-- <picture>
+  <source srcset="./asstes/imgs/extras/demogorgon-full.webp" type="image/webp">
+  <source srcset="./assets/imgs/extras/demogorgon.png" type="image/png">
+  <img mat-card-image class="character-img" src="assets/imgs/extras/demogorgon-full.png" alt="Demogorgon">
+</picture> -->
 
-<button mat-flat-button color="accent" class="" (click)="closeDialog()">Let's go!</button>
+<h1 mat-dialog-title>Ready to beat the upside down?</h1>
+
+<p>What's your name?</p>
+<mat-form-field appearance="fill">
+  <mat-label>Favorite Animal</mat-label>
+  <input matInput [(ngModel)]="data.name">
+</mat-form-field>
+
+<div mat-dialog-actions>
+  <button mat-flat-button color="primary" (click)="onNoClick()">No Thanks</button>
+  <button mat-flat-button color="accent" [mat-dialog-close]="data.name" cdkFocusInitial>Ok</button>
+</div>

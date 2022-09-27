@@ -34,6 +34,7 @@ export class CharactersDetailsComponent implements OnInit {
     });
 
 
+
   }
 
 }

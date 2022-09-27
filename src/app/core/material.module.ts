@@ -11,6 +11,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MatInputModule } from '@angular/material/input';
 
 const material = [
   MatToolbarModule,
@@ -21,7 +22,8 @@ const material = [
   LayoutModule,
   MatListModule,
   MatSidenavModule,
-  MatDialogModule
+  MatDialogModule,
+  MatInputModule
 ]
 
 
@@ -34,7 +36,7 @@ const material = [
     material
   ],
   declarations: [
-  
+
     PageNotFoundComponent
   ]
 })

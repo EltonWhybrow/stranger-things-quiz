@@ -15,23 +15,36 @@ export class QuizComponent implements OnInit {
   public currentQuestion: number = 0;
   public score: number = 0;
   quizComplete: boolean = false;
-  modalText = "Ready to battle the upside down?";
+  playerName: any = '';
+  firstQuestion: boolean = false;
+
 
   constructor(private httpService: HttpService, public dialog: MatDialog) { }
 
-  ngOnInit(): void {
-    this.getAllQuestions();
-    // this.getStartedModal();
+  openDialog(): void {
+    const dialogRef = this.dialog.open(MyDialogComponent, {
+      width: '250px',
+      data: { playerName: this.playerName },
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed', result);
+      this.playerName = result;
+      localStorage.setItem('player', result);
+    });
   }
 
+  ngOnInit(): void {
+    this.getAllQuestions();
+    if (localStorage.getItem('player') !== null) {
+      this.playerName = localStorage.getItem('player');
+      console.log('>>>LOG>>>', JSON.stringify(localStorage.getItem('player')))
 
-  // getStartedModal() {
-  //   const myCompDialog = this.dialog.open(MyDialogComponent, { data: this.modalText });
-  //   myCompDialog.afterClosed().subscribe((res) => {
-  //     // Data back from dialog
-  //     console.log({ res });
-  //   });
-  // }
+    } else {
+      this.openDialog();
+    }
+
+  }
 
   getAllQuestions() {
     this.httpService.getQuestions()
@@ -41,14 +54,17 @@ export class QuizComponent implements OnInit {
   }
 
   resetQuiz() {
+    this.firstQuestion = false;
     this.currentQuestion = 0;
     this.score = 0;
     this.quizComplete = false;
   }
 
   answer(currentNo: number, option: any) {
+    this.firstQuestion = true;
     if (currentNo + 1 === this.questionList.length) {
       this.quizComplete = true;
+      this.firstQuestion = false;
       console.log('quizComplete should be true', this.quizComplete);
     }
     if (option === this.questionList[currentNo].correctAnswer) {
