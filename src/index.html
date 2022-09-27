@@ -15,6 +15,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <script>
+    const pressed = [];
+    const secretCode = 'secret'
+
+    function waitForElm(selector) {
+      return new Promise(resolve => {
+        if (document.querySelector(selector)) {
+          return resolve(document.querySelector(selector));
+        }
+
+        const observer = new MutationObserver(mutations => {
+          if (document.querySelector(selector)) {
+            resolve(document.querySelector(selector));
+            observer.disconnect();
+          }
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+      });
+    }
+
+    window.addEventListener('keyup', (e) => {
+      pressed.push(e.key);
+      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length)
+      if (pressed.join('').includes(secretCode)) {
+        waitForElm('.switch-me').then((elm) => {
+          var image = Array.from(document.getElementsByClassName("character-img"));
+          image.forEach((img) => {
+            img.src = "./assets/imgs/extras/demogorgon.png"
+          })
+        });
+      }
+    })
+  </script>
+
 </head>
 
 <body class="mat-typography main-bg">

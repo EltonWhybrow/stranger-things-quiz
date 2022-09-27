@@ -33,10 +33,51 @@
       </div>
     </ng-container>
 
-    <!-- Quiz complete display -->
-    <div *ngIf="quizComplete">
+    <!-- Quiz complete / 5 or less -->
+    <div *ngIf="quizComplete && score <= 5">
       <div class="result">
-        <h2>Congratulations your done!!</h2>
+        <h2>Congratulations your done!! 0 - 5 </h2>
+        <h2 class="mat-display-3">You scored {{score}}!</h2>
+        <p>Out of {{questionList.length}} questions</p>
+        <p>{{incorrectAnswer}} answered incorrectly!</p>
+      </div>
+    </div>
+
+    <!-- Quiz complete / 5 or less -->
+    <div *ngIf="quizComplete && (score > 5 && score <=10) ">
+      <div class="result">
+        <h2>Congratulations your done!! 6 - 10 </h2>
+        <h2 class="mat-display-3">You scored {{score}}!</h2>
+        <p>Out of {{questionList.length}} questions</p>
+        <p>{{incorrectAnswer}} answered incorrectly!</p>
+      </div>
+    </div>
+
+    <!-- Quiz complete / 5 or less -->
+    <div *ngIf="quizComplete && (score > 10 && score <=15) ">
+      <div class="result">
+        <h2>Congratulations your done!! 11 - 15 </h2>
+        <h2 class="mat-display-3">You scored {{score}}!</h2>
+        <p>Out of {{questionList.length}} questions</p>
+        <p>{{incorrectAnswer}} answered incorrectly!</p>
+      </div>
+    </div>
+
+
+    <!-- Quiz complete / 5 or less -->
+    <div *ngIf="quizComplete && (score > 15 && score <=19) ">
+      <div class="result">
+        <h2>Congratulations your done!! 16 - 19 </h2>
+        <h2 class="mat-display-3">You scored {{score}}!</h2>
+        <p>Out of {{questionList.length}} questions</p>
+        <p>{{incorrectAnswer}} answered incorrectly!</p>
+      </div>
+    </div>
+
+    <!-- Quiz complete / Full marks-->
+    <div *ngIf="quizComplete && score === 20">
+      <div class="result">
+        <h2>WOW!!!! Congratulations your done!! 16 - 19 </h2>
         <h2 class="mat-display-3">You scored {{score}}!</h2>
         <p>Out of {{questionList.length}} questions</p>
         <p>{{incorrectAnswer}} answered incorrectly!</p>

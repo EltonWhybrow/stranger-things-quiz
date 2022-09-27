@@ -1,6 +1,6 @@
 <div class="content-area">
-
   <mat-grid-list *ngIf="showCharacters$ ; else loading" [cols]="cols" [rowHeight]="rowHeight" gutterSize="1rem">
+
 
     <mat-grid-tile class="character" *ngFor="let character of showCharacters$ | async"
       (click)="getCharacterDetails(character.idString)">
@@ -16,11 +16,11 @@
         </div>
 
 
-        <picture>
+        <!-- <picture>
           <source srcset="{{character.images.main}}.webp" type="image/webp">
-          <source srcset="{{character.images.main}}.png" type="image/png">
-          <img mat-card-image class="character-img" src="{{character.images.main}}.png" alt="{{character.name.show}}">
-        </picture>
+          <source srcset="{{character.images.main}}.png" type="image/png"> -->
+        <img class="character-img switch-me" src="{{character.images.main}}.png" alt="{{character.name.show}}">
+        <!-- </picture> -->
       </div>
     </mat-grid-tile>
   </mat-grid-list>
