@@ -18,7 +18,6 @@ export class QuizComponent implements OnInit {
   playerName: any = '';
   firstQuestion: boolean = false;
 
-
   constructor(private httpService: HttpService, public dialog: MatDialog) { }
 
   openDialog(): void {
@@ -43,7 +42,7 @@ export class QuizComponent implements OnInit {
     this.getAllQuestions();
     if (localStorage.getItem('player') !== null) {
       this.playerName = localStorage.getItem('player');
-      console.log('>>>LOG>>>', JSON.stringify(localStorage.getItem('player')))
+      // console.log('>>>LOG>>>', JSON.stringify(localStorage.getItem('player')))
     } else {
       this.openDialog();
     }

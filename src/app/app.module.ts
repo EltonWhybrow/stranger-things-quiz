@@ -13,6 +13,7 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { AboutComponent } from './about/about.component';
 import { MyDialogComponent } from './my-dialog/my-dialog.component';
 import { FormsModule } from '@angular/forms';
+import { ConfirmDeactivateGuard } from './shared/confirm-deactivate-guard.guard';
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { FormsModule } from '@angular/forms';
     MaterialModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ConfirmDeactivateGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
