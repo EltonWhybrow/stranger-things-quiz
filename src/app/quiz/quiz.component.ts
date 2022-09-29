@@ -1,7 +1,7 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { MyDialogComponent } from '../my-dialog/my-dialog.component';
 import { HttpService } from '../shared/http-service.service';
+import { MyDialogComponent } from '../shared/my-dialog/my-dialog.component';
 
 @Component({
   templateUrl: './quiz.component.html',
@@ -22,7 +22,7 @@ export class QuizComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(MyDialogComponent, {
-      width: '250px',
+      width: '270px',
       data: { playerName: this.playerName },
     });
 
