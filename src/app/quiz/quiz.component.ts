@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MyDialogComponent } from '../my-dialog/my-dialog.component';
 import { HttpService } from '../shared/http-service.service';
@@ -30,7 +30,12 @@ export class QuizComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed', result);
       this.playerName = result;
-      localStorage.setItem('player', result);
+      if (result !== undefined) {
+        localStorage.setItem('player', result);
+      } else {
+        this.playerName = 'Anomynous figure';
+        localStorage.setItem('player', 'Anomynous figure');
+      }
     });
   }
 
@@ -39,11 +44,9 @@ export class QuizComponent implements OnInit {
     if (localStorage.getItem('player') !== null) {
       this.playerName = localStorage.getItem('player');
       console.log('>>>LOG>>>', JSON.stringify(localStorage.getItem('player')))
-
     } else {
       this.openDialog();
     }
-
   }
 
   getAllQuestions() {

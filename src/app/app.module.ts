@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { MyDialogComponent } from './my-dialog/my-dialog.component';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,

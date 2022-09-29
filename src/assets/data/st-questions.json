@@ -221,10 +221,10 @@
     "id": 20,
     "question": "What new shopping centre is the main location used in Season 3?",
     "possibleAnswers": [
-      "The Moonlight mall",
+      "The Moonlight Mall",
       "Starcourt Mall",
-      "The Super Plaze",
-      "Plaze Court Shopping"
+      "The Super Plaza",
+      "Plaza Court Shopping"
     ],
     "correctAnswer": "Starcourt Mall"
   }

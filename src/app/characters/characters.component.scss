@@ -37,7 +37,7 @@
 
 .name-sign {
   z-index: 99;
-  right: 2px;
+  right: 32px;
   top: 42px;
   border: solid 2px white;
   background: #795548;
@@ -108,6 +108,7 @@
   border-bottom: solid 1px #ea3910;
   will-change: filter;
   transition: filter 0.3s ease-in-out;
+  max-width: 330px;
 }
 
 .star {
