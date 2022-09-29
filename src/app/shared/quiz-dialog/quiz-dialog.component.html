@@ -1,0 +1,6 @@
+<h1 mat-dialog-title>{{data.message}}</h1>
+<!-- {{data | json}} -->
+<div mat-dialog-actions>
+  <button mat-flat-button color="primary" (click)="onCloseClick()">{{data.buttonNoCaption}}</button>
+  <button mat-flat-button color="accent" (click)="onSubmit()" cdkFocusInitial>{{data.buttonYesCaption}}</button>
+</div>

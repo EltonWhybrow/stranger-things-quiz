@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { MyDialogComponent } from './shared/my-dialog/my-dialog.component';
 import { FormsModule } from '@angular/forms';
 import { ConfirmDeactivateGuard } from './shared/confirm-deactivate-guard.guard';
+import { QuizDialogComponent } from './shared/quiz-dialog/quiz-dialog.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ConfirmDeactivateGuard } from './shared/confirm-deactivate-guard.guard'
     BgColorDirective,
     SpinnerComponent,
     AboutComponent,
-    MyDialogComponent
+    MyDialogComponent,
+    QuizDialogComponent
   ],
   imports: [
     BrowserModule,

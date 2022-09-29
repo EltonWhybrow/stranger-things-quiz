@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Observable } from 'rxjs';
 import { HttpService } from '../shared/http-service.service';
 import { MyDialogComponent } from '../shared/my-dialog/my-dialog.component';
+import { QuizDialogComponent } from '../shared/quiz-dialog/quiz-dialog.component';
 
 @Component({
   templateUrl: './quiz.component.html',
@@ -22,7 +24,7 @@ export class QuizComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(MyDialogComponent, {
-      width: '270px',
+      width: '350px',
       data: { playerName: this.playerName },
     });
 
@@ -36,6 +38,16 @@ export class QuizComponent implements OnInit {
         localStorage.setItem('player', 'Anomynous figure');
       }
     });
+  }
+
+  confirmDialog(): Observable<boolean> {
+    const message = 'You will lose quiz progress if you navigate away!';
+    const data = { 'message': message, 'buttonYesCaption': 'OK', 'buttonNoCaption': 'No' };
+    const dialogRef = this.dialog.open(QuizDialogComponent, {
+      width: '350px',
+      data: data
+    });
+    return dialogRef.afterClosed();
   }
 
   ngOnInit(): void {
