@@ -37,28 +37,41 @@
     <!-- Quiz complete / 5 or less -->
     <div *ngIf="quizComplete && score <= 5">
       <div class="result">
-        <h2>Congratulations your done!! 0 - 5 </h2>
-        <h2 class="mat-display-3">You scored {{score}}!</h2>
-        <p>Out of {{questionList.length}} questions</p>
-        <p>{{incorrectAnswer}} answered incorrectly!</p>
+        <h2 class="highlight-para mat-display-1">Wastoid - Maybe you stayed up too late!</h2>
+
+        <h3 class="mat-display-2">You scored <span class="score-final" [ngClass]="{'low':score <= 5}">{{score}}</span>
+        </h3>
+        <ng-container *ngFor="let _ of [].constructor(1)"> <img class="name-star" src="./assets/imgs/cast/star.svg"
+            alt="star"></ng-container>
+
+        <p class="mat-body-1">Out of {{questionList.length}} questions</p>
+        <p class="highlight-para mat-body-1">{{incorrectAnswer}} answered incorrectly!</p>
       </div>
     </div>
 
-    <!-- Quiz complete / 5 or less -->
+    <!-- Quiz complete / 5 to 10 -->
     <div *ngIf="quizComplete && (score > 5 && score <=10) ">
       <div class="result">
-        <h2>Congratulations your done!! 6 - 10 </h2>
-        <h2 class="mat-display-3">You scored {{score}}!</h2>
+        <h2 class="highlight-para mat-display-1">Mouthbreather - You could do better! </h2>
+        <h3 class="mat-display-2">You scored <span class="score-final"
+            [ngClass]="{'med':(score > 5 && score <=10)}">{{score}}</span>
+        </h3>
+        <ng-container *ngFor="let _ of [].constructor(2)"> <img class="name-star" src="./assets/imgs/cast/star.svg"
+            alt="star"></ng-container>
         <p>Out of {{questionList.length}} questions</p>
         <p>{{incorrectAnswer}} answered incorrectly!</p>
       </div>
     </div>
 
-    <!-- Quiz complete / 5 or less -->
+    <!-- Quiz complete / 10 to 15 -->
     <div *ngIf="quizComplete && (score > 10 && score <=15) ">
       <div class="result">
-        <h2>Congratulations your done!! 11 - 15 </h2>
-        <h2 class="mat-display-3">You scored {{score}}!</h2>
+        <h2 class="highlight-para mat-display-1">Friend don't lie - You did okay! </h2>
+        <h3 class="mat-display-2">You scored <span class="score-final"
+            [ngClass]="{'med-high':(score > 10 && score <=15)}">{{score}}</span>
+        </h3>
+        <ng-container *ngFor="let _ of [].constructor(3)"> <img class="name-star" src="./assets/imgs/cast/star.svg"
+            alt="star"></ng-container>
         <p>Out of {{questionList.length}} questions</p>
         <p>{{incorrectAnswer}} answered incorrectly!</p>
       </div>
@@ -68,8 +81,12 @@
     <!-- Quiz complete / 5 or less -->
     <div *ngIf="quizComplete && (score > 15 && score <=19) ">
       <div class="result">
-        <h2>Congratulations your done!! 16 - 19 </h2>
-        <h2 class="mat-display-3">You scored {{score}}!</h2>
+        <h2 class="highlight-para mat-display-1">Chill - Your on point! </h2>
+        <h3 class="mat-display-2">You scored <span class="score-final"
+            [ngClass]="{'high':(score > 15 && score <=19)}">{{score}}</span>
+        </h3>
+        <ng-container *ngFor="let _ of [].constructor(4)"> <img class="name-star" src="./assets/imgs/cast/star.svg"
+            alt="star"></ng-container>
         <p>Out of {{questionList.length}} questions</p>
         <p>{{incorrectAnswer}} answered incorrectly!</p>
       </div>
@@ -78,8 +95,12 @@
     <!-- Quiz complete / Full marks-->
     <div *ngIf="quizComplete && score === 20">
       <div class="result">
-        <h2>WOW!!!! Congratulations your done!! 16 - 19 </h2>
-        <h2 class="mat-display-3">You scored {{score}}!</h2>
+        <h2 class="highlight-para mat-display-1">Bitchin! - Nailed it Nigel!</h2>
+        <h3 class="mat-display-2">You scored <span class="score-final"
+            [ngClass]="{'winner':score === 20}">{{score}}</span>
+        </h3>
+        <ng-container *ngFor="let _ of [].constructor(5)"> <img class="name-star" src="./assets/imgs/cast/star.svg"
+            alt="star"></ng-container>
         <p>Out of {{questionList.length}} questions</p>
         <p>{{incorrectAnswer}} answered incorrectly!</p>
       </div>
