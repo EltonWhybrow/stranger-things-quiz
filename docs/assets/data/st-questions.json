@@ -59,7 +59,7 @@
   },
   {
     "id": 6,
-    "question": "Who is the first person from Hawkins Hgh School to die at the hands of The Demogorgon?",
+    "question": "Who is the first person from Hawkins High School to die at the hands of The Demogorgon?",
     "possibleAnswers": [
       "Barbara Windsor",
       "Barcardi B",
@@ -120,9 +120,9 @@
     "question": "What famous horror movie character player 'Victor Kreel' in Season 4 of Stranger things?",
     "possibleAnswers": [
       "Hannibel Lecter",
-      "Freddy Krueger",
       "Michael Myers",
       "Leatherface",
+      "Freddy Krueger",
       "Chucky"
     ],
     "correctAnswer": "Freddy Krueger"
@@ -210,8 +210,8 @@
     "id": 19,
     "question": "What is the room the children play in at Hawkins National Laboratory called?",
     "possibleAnswers": [
-      "The White Room",
       "The Rainbow Room",
+      "The White Room",
       "The Play Pen",
       "The Mind Trainer"
     ],
@@ -222,9 +222,9 @@
     "question": "What new shopping centre is the main location used in Season 3?",
     "possibleAnswers": [
       "The Moonlight Mall",
-      "Starcourt Mall",
       "The Super Plaza",
-      "Plaza Court Shopping"
+      "Plaza Court Shopping",
+      "Starcourt Mall"
     ],
     "correctAnswer": "Starcourt Mall"
   }
