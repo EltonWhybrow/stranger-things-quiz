@@ -29,6 +29,7 @@
             "assets": [
               "src/favicon.ico",
               "src/site.webmanifest",
+              "src/404.html",
               "src/assets"
             ],
             "styles": [
