@@ -25,7 +25,13 @@
         class="button">
         Quiz
       </button>
-      <button mat-stroked-button color="accent" routerLink="/about" routerLinkActive="is-active" aria-label="show quiz"
+      <ng-container *ngIf="this.dataService.quizWinner">
+        <button mat-stroked-button color="accent" routerLink="/game" routerLinkActive="is-active" aria-label="show quiz"
+          class="button">
+          Game
+        </button>
+      </ng-container>
+      <button mat-stroked-button color="accent" routerLink="/about" routerLinkActive="is-active" aria-label="about"
         class="button">
         About
       </button>
@@ -91,6 +97,15 @@
             Quiz
           </button>
         </li>
+
+        <ng-container *ngIf="this.dataService.quizWinner">
+          <li>
+            <button mat-stroked-button color="accent" routerLink="/game" routerLinkActive="is-active"
+              aria-label="show quiz" class="button mat-display-1" (click)="this.burgerActive = false;">
+              Game
+            </button>
+          </li>
+        </ng-container>
         <li>
           <button mat-stroked-button color="accent" routerLink="/about" routerLinkActive="is-active"
             aria-label="show quiz" class="button mat-display-1" (click)="this.burgerActive = false;">

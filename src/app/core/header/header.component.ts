@@ -1,6 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { OnInit } from '@angular/core';
 import { Component, Inject, Input } from '@angular/core';
+import { DataService } from 'src/app/shared/data.service';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +15,7 @@ export class HeaderComponent implements OnInit {
   backgroundImage: string = "theme-1";
   currentTheme = localStorage.getItem("theme");
 
-  constructor(@Inject(DOCUMENT) private document: any) {
+  constructor(@Inject(DOCUMENT) private document: any, public dataService: DataService) {
   }
 
   ngOnInit(): void {

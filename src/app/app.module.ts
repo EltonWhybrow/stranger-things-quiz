@@ -15,6 +15,8 @@ import { MyDialogComponent } from './shared/my-dialog/my-dialog.component';
 import { FormsModule } from '@angular/forms';
 import { ConfirmDeactivateGuard } from './shared/confirm-deactivate-guard.guard';
 import { QuizDialogComponent } from './shared/quiz-dialog/quiz-dialog.component';
+import { GameComponent } from './game/game.component';
+import { GameGuard } from './shared/game.guard';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { QuizDialogComponent } from './shared/quiz-dialog/quiz-dialog.component'
     SpinnerComponent,
     AboutComponent,
     MyDialogComponent,
-    QuizDialogComponent
+    QuizDialogComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,7 @@ import { QuizDialogComponent } from './shared/quiz-dialog/quiz-dialog.component'
     MaterialModule,
     FormsModule
   ],
-  providers: [ConfirmDeactivateGuard],
+  providers: [ConfirmDeactivateGuard, GameGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

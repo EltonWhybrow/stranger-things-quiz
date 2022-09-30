@@ -7,11 +7,14 @@
   <mat-card *ngIf="questionList else loading">
 
     <!-- Score counter / TODO: May hide this!! -->
-    <div class=" score">
+    <!-- <div class=" score">
       <button mat-fab [color]="score > 0 ? 'accent' : 'primary'" aria-label="current score">
         {{score}}
       </button>
-    </div>
+    </div> -->
+
+    <!-- {{this.dataService.quizWinner}} -->
+
 
     <!-- The Quiz questions -->
     <ng-container *ngIf="!quizComplete">
@@ -103,19 +106,21 @@
             alt="star"></ng-container>
         <p>Out of {{questionList.length}} questions</p>
         <p>{{incorrectAnswer}} answered incorrectly!</p>
+        <h2 class="highlight-para mat-display-1">NEW! - Game released</h2>
       </div>
     </div>
 
     <!-- Question number and reset -->
     <mat-toolbar class="toolbar">
-      <div class="controls" *ngIf="quizComplete">
+      <div class="controls" *ngIf="quizComplete && score < 20">
         <button (click)="resetQuiz()" mat-mini-fab color="primary" aria-label="previous question">
           <mat-icon>autorenew
           </mat-icon>
-        </button> <span class="mat-body-1">Restart</span>
+        </button> <span class="mat-body-1">Try Again?</span>
       </div>
 
-      <h1 *ngIf="!quizComplete" class="mat-h1">Question {{currentQuestion + 1}} of {{questionList.length}}</h1>
+      <h1 *ngIf="!quizComplete" class="mat-h1">Question <span class="highlight-para">{{currentQuestion + 1}}</span> of
+        {{questionList.length}}</h1>
 
     </mat-toolbar>
 

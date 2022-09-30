@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
+import { DataService } from '../shared/data.service';
 import { HttpService } from '../shared/http-service.service';
 import { MyDialogComponent } from '../shared/my-dialog/my-dialog.component';
 import { QuizDialogComponent } from '../shared/quiz-dialog/quiz-dialog.component';
@@ -20,7 +21,7 @@ export class QuizComponent implements OnInit {
   playerName: any = '';
   firstQuestion: boolean = false;
 
-  constructor(private httpService: HttpService, public dialog: MatDialog) { }
+  constructor(private httpService: HttpService, public dialog: MatDialog, public dataService: DataService) { }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(MyDialogComponent, {
@@ -76,23 +77,29 @@ export class QuizComponent implements OnInit {
 
   answer(currentNo: number, option: any) {
     this.firstQuestion = true;
+    // Quiz is completed
     if (currentNo + 1 === this.questionList.length) {
       this.quizComplete = true;
       this.firstQuestion = false;
-      console.log('quizComplete should be true', this.quizComplete);
+      // console.log('quizComplete should be true', this.quizComplete);
     }
+    // Correct answer - add to score and move on
     if (option === this.questionList[currentNo].correctAnswer) {
       this.score += 1;
       this.correctAnwser++;
       setTimeout(() => {
         this.currentQuestion++;
-      }, 500);
-
+        if (this.score === 20) {
+          this.dataService.quizWinner = true;
+          localStorage.setItem('wrgame', 'true');
+        }
+      }, 200);
     } else {
+      // Wrong answer move on
       setTimeout(() => {
         this.currentQuestion++;
         this.incorrectAnswer++;
-      }, 500);
+      }, 200);
 
     }
   }

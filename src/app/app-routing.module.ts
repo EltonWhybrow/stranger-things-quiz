@@ -5,8 +5,10 @@ import { CharactersDetailsComponent } from './characters/characters-details.comp
 import { CharactersComponent } from './characters/characters.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GameComponent } from './game/game.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ConfirmDeactivateGuard } from './shared/confirm-deactivate-guard.guard';
+import { GameGuard } from './shared/game.guard';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent, title: 'Welcome - Stranger Things Quiz' },
@@ -17,6 +19,7 @@ const routes: Routes = [
   },
   { path: 'quiz', component: QuizComponent, canDeactivate: [ConfirmDeactivateGuard], title: 'Quiz - Stranger Things Quiz' },
   { path: 'about', component: AboutComponent, title: 'About - Stranger Things Quiz' },
+  { path: 'game', component: GameComponent, canActivate: [GameGuard], title: 'Whack a thing! - Stranger Things Quiz' },
   { path: '**', component: PageNotFoundComponent, title: 'Page not found - Stranger Things Quiz' },
   { path: '', pathMatch: 'full', redirectTo: '' },
 ]
