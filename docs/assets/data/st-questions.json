@@ -71,9 +71,9 @@
   },
   {
     "id": 7,
-    "question": "Which character from the show is British, and was born and raised in Spain?",
+    "question": "In their real life. Which character fom the show, is British, and was born and raised in Spain?",
     "possibleAnswers": [
-      "Jim Hooper",
+      "Jim Hopper",
       "Eleven",
       "Max Mayfield",
       "Bill Byers",
@@ -94,7 +94,7 @@
   },
   {
     "id": 9,
-    "question": "Who does vampire impresion on Haloween in Hawkins?",
+    "question": "Who does vampire impressions on Halloween in Hawkins?",
     "possibleAnswers": [
       "Bob Newby",
       "Steve Harrington",
@@ -110,14 +110,14 @@
       "Eddie Munson",
       "Max Mayfield",
       "Eleven",
-      "Murray Murray Bauman",
+      "Murray Bauman",
       "Karen Wheeler"
     ],
     "correctAnswer": "Max Mayfield"
   },
   {
     "id": 11,
-    "question": "What famous horror movie character player 'Victor Kreel' in Season 4 of Stranger things?",
+    "question": "What famous horror movie character played 'Victor Kreel' in Season 4 of Stranger things?",
     "possibleAnswers": [
       "Hannibel Lecter",
       "Michael Myers",
@@ -129,14 +129,14 @@
   },
   {
     "id": 12,
-    "question": "Which character in the show enjoyed the most screentime from season 1-3?",
+    "question": "Which character in the show had the most screentime from season 1-3?",
     "possibleAnswers": [
       "Dustin Henderson",
       "Steve Harrington",
       "Eleven",
       "Mike Wheeler",
       "Nancy Wheeler",
-      "Jim Hooper"
+      "Jim Hopper"
     ],
     "correctAnswer": "Eleven"
   },
