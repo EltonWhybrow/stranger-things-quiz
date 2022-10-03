@@ -52,6 +52,7 @@ export class QuizComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.incorrectAnswer = 0;
     this.getAllQuestions();
     if (localStorage.getItem('player') !== null) {
       this.playerName = localStorage.getItem('player');
@@ -71,6 +72,7 @@ export class QuizComponent implements OnInit {
   resetQuiz() {
     this.firstQuestion = false;
     this.currentQuestion = 0;
+    this.incorrectAnswer = 0;
     this.score = 0;
     this.quizComplete = false;
   }
