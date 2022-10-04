@@ -18,20 +18,3 @@ export class ConfirmDeactivateGuard implements CanDeactivate<QuizComponent> {
   }
 
 }
-
-
-// @Injectable()
-// export class CanDeactivateGuard implements CanDeactivate<CreateQuoteComponent> {
-//   constructor(
-//     public dialog: MatDialog,
-//   ){
-
-//   }
-//   canDeactivate(component: CreateQuoteComponent): Observable<boolean> {
-//     if (!component.changesSaved) {
-//       return component.confirmDialog();
-//     }
-//     //please import 'of' form 'rxjs/operators'
-//     return of(true);
-//   }
-// }

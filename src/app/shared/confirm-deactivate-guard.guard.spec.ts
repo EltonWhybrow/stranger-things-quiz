@@ -1,13 +1,20 @@
 import { TestBed } from '@angular/core/testing';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ConfirmDeactivateGuard } from './confirm-deactivate-guard.guard';
 
-import { ConfirmDeactivateGuardGuard } from './confirm-deactivate-guard.guard';
-
-describe('ConfirmDeactivateGuardGuard', () => {
-  let guard: ConfirmDeactivateGuardGuard;
+describe('ConfirmDeactivateGuard', () => {
+  let guard: ConfirmDeactivateGuard;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    guard = TestBed.inject(ConfirmDeactivateGuardGuard);
+    TestBed.configureTestingModule({
+      imports: [
+        MatDialogModule
+      ],
+      providers: [
+        ConfirmDeactivateGuard
+      ]
+    });
+    guard = TestBed.inject(ConfirmDeactivateGuard);
   });
 
   it('should be created', () => {

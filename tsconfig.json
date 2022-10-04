@@ -1,6 +1,7 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
+  "no-unused-variable": true,
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -26,5 +27,16 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "rules": {
+    "ban": [
+      true,
+      { "name": ["describe", "only"], "message": "don't focus tests" },
+      { "name": "fdescribe", "message": "don't focus tests" },
+      { "name": ["it", "only"], "message": "don't focus tests" },
+      { "name": "fit", "message": "don't focus tests" },
+      { "name": ["test", "only"], "message": "don't focus tests" },
+      { "name": "ftest", "message": "don't focus tests" }
+    ]
   }
 }

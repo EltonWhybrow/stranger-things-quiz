@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
@@ -7,7 +7,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   templateUrl: './quiz-dialog.component.html',
   styleUrls: ['./quiz-dialog.component.scss']
 })
-export class QuizDialogComponent implements OnInit {
+export class QuizDialogComponent {
 
   constructor(
     public dialogRef: MatDialogRef<QuizDialogComponent>,
@@ -19,9 +19,6 @@ export class QuizDialogComponent implements OnInit {
 
   onSubmit() {
     this.dialogRef.close(true);
-  }
-
-  ngOnInit(): void {
   }
 
 }

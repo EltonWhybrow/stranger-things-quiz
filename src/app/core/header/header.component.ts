@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { OnInit } from '@angular/core';
-import { Component, Inject, Input } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { DataService } from 'src/app/shared/data.service';
 
 @Component({
@@ -15,10 +15,14 @@ export class HeaderComponent implements OnInit {
   backgroundImage: string = "theme-1";
   currentTheme = localStorage.getItem("theme");
 
-  constructor(@Inject(DOCUMENT) private document: any, public dataService: DataService) {
-  }
+  constructor(@Inject(DOCUMENT) private document: any, public dataService: DataService) { }
 
   ngOnInit(): void {
+    this.setTheme()
+  }
+
+  // Set theme on body if in local storage
+  public setTheme() {
     if (!localStorage.getItem("theme")) {
       this.document.body.classList.add("theme-1");
     } else {
@@ -26,9 +30,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  /*
-  Toggle class on mobile burger
-*/
+  // Toggle class on mobile burger
   public toggleBurgerNav() {
     this.burgerActive = !this.burgerActive
   }

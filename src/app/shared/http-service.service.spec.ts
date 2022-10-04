@@ -11,6 +11,43 @@ import { IShowInfo } from './show.interface';
 import { ICharacter } from './character.interface';
 import { IQuestions } from './questions.interface';
 
+// export const mockQuestions: IQuestions[] = [
+//   {
+//     "id": 1,
+//     "question": "In which fictional town does the show take place?",
+//     "possibleAnswers": [
+//       "Houston",
+//       "Hanford",
+//       "Hamilton",
+//       "Hawkins"
+//     ],
+//     "correctAnswer": "Hawkins"
+//   },
+//   {
+//     "id": 2,
+//     "question": "What is the name of the four friends favourite fantasy tabletop game?",
+//     "possibleAnswers": [
+//       "The 13th Age",
+//       "Quests Of Yore",
+//       "Dungeons & Dragons",
+//       "Shadowrun",
+//       "Star Wars Roleplaying"
+//     ],
+//     "correctAnswer": "Dungeons & Dragons"
+//   },
+//   {
+//     "id": 3,
+//     "question": "Who were the creators of the hit TV show?",
+//     "possibleAnswers": [
+//       "The Samsung twins",
+//       "The Duffer brothers",
+//       "Bernard Manning",
+//       "Quentin Tarantino",
+//       "Steven Martin"
+//     ],
+//     "correctAnswer": "The Duffer brothers"
+//   }]
+
 describe('HttpService', () => {
   let httpClient: HttpClient;
   let httpTestingController: HttpTestingController;
@@ -41,43 +78,43 @@ describe('HttpService', () => {
     let questonUrl: string;
 
     beforeEach(() => {
-      questonUrl = 'https://api.sampleapis.com/futurama/questions';
+      questonUrl = './assets/data/st-questions.json';
       mockExpectedQuestions = [
         {
           "id": 1,
-          "question": "What is Fry's first name?",
+          "question": "In which fictional town does the show take place?",
           "possibleAnswers": [
-            "Fred",
-            "Philip",
-            "Will",
-            "John"
+            "Houston",
+            "Hanford",
+            "Hamilton",
+            "Hawkins"
           ],
-          "correctAnswer": "Philip"
+          "correctAnswer": "Hawkins"
         },
         {
           "id": 2,
-          "question": "In 'Benders Big Score' what ailen species scam the earth?",
+          "question": "What is the name of the four friends favourite fantasy tabletop game?",
           "possibleAnswers": [
-            "Nibbloniens",
-            "Omicrons",
-            "Robots",
-            "Nudest aliens",
-            "Tentacals"
+            "The 13th Age",
+            "Quests Of Yore",
+            "Dungeons & Dragons",
+            "Shadowrun",
+            "Star Wars Roleplaying"
           ],
-          "correctAnswer": "Nudest aliens"
+          "correctAnswer": "Dungeons & Dragons"
         },
         {
           "id": 3,
-          "question": "What is benders middle and last name?",
+          "question": "Who were the creators of the hit TV show?",
           "possibleAnswers": [
-            "E Smithie",
-            "Flam Flexo",
-            "Lobster Squid",
-            "Bending Rodriguez",
-            "Steven martin"
+            "The Samsung twins",
+            "The Duffer brothers",
+            "Bernard Manning",
+            "Quentin Tarantino",
+            "Steven Martin"
           ],
-          "correctAnswer": "Bending Rodriguez"
-        },
+          "correctAnswer": "The Duffer brothers"
+        }
       ] as IQuestions[];
     });
 
@@ -140,7 +177,7 @@ describe('HttpService', () => {
     let showUrl: string;
 
     beforeEach(() => {
-      showUrl = 'https://api.sampleapis.com/futurama/info';
+      showUrl = './assets/data/st-info.json';
       mockExpectedShowInfo = [
         {
           "synopsis": "Philip J. Fry is a 25 year old delivery boy living in New York City who is cryogenically frozen on New Year's 1999 for 1000 years, where he wakes up in New New York City on December 31, 2999. There, he meets Turanga Leela, a tough but loving, beautiful one-eyed alien; and Bender, an alcohol-powered bending robot who is addicted to liquor, cigars, stealing, amongst other things. Eventually, they all meet up with Fry's Great, Great, Great, etc... Nephew, Hubert J. Farnsworth. Farnsworth is a very old man who is a genius but is very senile and forgetful. Fry, Leela, and Bender wind up working for Farnsworth's Planet Express Delivery Service. They then meet their co-workers; Amy Wong, who is a Martian intern who comes from a rich family, but is still a human who is very hip. Also, there is Hermes Conrad, who manages the delivery service and is pretty strict. Hermes seems Jamaican in voice and look. And finally, there's Dr. John Zoidberg, a lobster-like alien who is the crew's doctor. Unfortunately, he knows nothing about humans. Fry, Leela, Bender, and sometimes Amy and Dr. Zoidberg travel around the universe risking life and limb delivering packages and performing charitable tasks for tax deductions.",
@@ -219,27 +256,27 @@ describe('HttpService', () => {
     let characterUrl: string;
 
     beforeEach(() => {
-      characterUrl = 'https://api.sampleapis.com/futurama/characters';
+      characterUrl = './assets/data/st-characters.json';
       mockExpectedCharacters = [
         {
           "name": {
-            "first": "Philip",
-            "middle": "Jay",
-            "last": "Fry"
+            "show": "Philip",
+            "real": "Jay"
           },
           "images": {
-            "head-shot": "",
+            "details": "",
             "main": "https://upload.wikimedia.org/wikipedia/en/2/28/Philip_Fry.png"
           },
           "gender": "Male",
-          "species": "Human",
-          "homePlanet": "Earth",
+          "lowdown": "something",
           "occupation": "Intergalactic Delivery Boy",
+          "nicknames": "string",
           "sayings": [
             "Shut up and take my money!",
             "I'm walking on sunshine, woah oh oooh",
           ],
           "id": 1,
+          "idString": "",
           "age": "25"
         },
       ] as ICharacter[];
