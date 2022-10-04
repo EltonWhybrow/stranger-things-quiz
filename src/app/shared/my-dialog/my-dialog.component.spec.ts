@@ -1,3 +1,4 @@
+import { DebugElement } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MatDialogModule, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
@@ -5,7 +6,7 @@ import { MyDialogComponent } from './my-dialog.component';
 
 describe('MyDialogComponent', () => {
   let component: MyDialogComponent;
-  let fixture: ComponentFixture<MyDialogComponent>;
+  let fixture: ComponentFixture<MyDialogComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
