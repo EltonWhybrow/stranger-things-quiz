@@ -68,7 +68,7 @@
 
 .hole:after {
   display: block;
-  background: url(/assets/imgs/game/pumpkin-patch.png) bottom center no-repeat;
+  background: url(./assets/imgs/game/pumpkin-patch.png) bottom center no-repeat;
   background-size: contain;
   content: "";
   width: 100%;
@@ -79,7 +79,7 @@
 }
 
 .mole {
-  background: url(/assets/imgs/game/whack-a-gorgon.svg) bottom center no-repeat;
+  background: url(./assets/imgs/game/whack-a-gorgon.svg) bottom center no-repeat;
   background-size: 100%;
   position: absolute;
   top: 100%;
