@@ -68,6 +68,9 @@ export class GameComponent implements OnInit {
     this.score = 0;
     this.peep();
     setTimeout(() => {
+      setTimeout(() => {
+        this.hiScore = this.score;
+      }, 1000)
       this.timeUp = true;
       this.playText = 'Try again?'
       this.disablePlay = false;
