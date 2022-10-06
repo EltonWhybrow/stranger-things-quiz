@@ -35,12 +35,16 @@ export class HeaderComponent implements OnInit {
     this.burgerActive = !this.burgerActive
   }
 
-  public changeTheme() {
+  public changeTheme(): any {
     let random = Math.round((Math.random() * 100) % 3);
     // console.log(random, Math.random() * 100)
-    this.backgroundImage = this.images[random];
     this.document.body.classList.remove("theme-1", "theme-2", "theme-3", "theme-4");
     this.document.body.classList.add(this.backgroundImage);
     localStorage.setItem("theme", this.backgroundImage)
+    if (this.backgroundImage === this.images[random]) {
+      console.log('Ah nah thats the same one bud');
+      return this.changeTheme();
+    }
+    this.backgroundImage = this.images[random];
   }
 }
