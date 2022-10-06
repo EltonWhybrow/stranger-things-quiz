@@ -35,19 +35,19 @@ body {
 .main-bg {
   &.theme-1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-      url(/assets/imgs/backgrounds/bkg-1.jpeg);
+      url(assets/imgs/backgrounds/bkg-1.jpeg);
   }
   &.theme-2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-      url(/assets/imgs/backgrounds/bkg-2.jpeg);
+      url(assets/imgs/backgrounds/bkg-2.jpeg);
   }
   &.theme-3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-      url(/assets/imgs/backgrounds/bkg-3.jpeg);
+      url(assets/imgs/backgrounds/bkg-3.jpeg);
   }
   &.theme-4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-      url(/assets/imgs/backgrounds/bkg-4.jpeg);
+      url(assets/imgs/backgrounds/bkg-4.jpeg);
   }
 
   width: 100%;
@@ -193,7 +193,7 @@ h2.mat-h2 {
 
 .hole:after {
   display: block;
-  background: url(/assets/imgs/game/pumpkin-patch.png) bottom center no-repeat;
+  background: url(assets/imgs/game/pumpkin-patch.png) bottom center no-repeat;
   background-size: contain;
   content: "";
   width: 100%;
@@ -204,7 +204,7 @@ h2.mat-h2 {
 }
 
 .mole {
-  background: url(/assets/imgs/game/whack-a-gorgon.svg) bottom center no-repeat;
+  background: url(assets/imgs/game/whack-a-gorgon.svg) bottom center no-repeat;
   background-size: 100%;
   position: absolute;
   top: 100%;
