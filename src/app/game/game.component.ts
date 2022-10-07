@@ -14,7 +14,7 @@ export class GameComponent implements OnInit {
   timeUp: boolean = false;
   score: number = 0;
   moles: any;
-  hiScore: any;
+  hiScore: any
 
   constructor() { }
 
@@ -31,9 +31,9 @@ export class GameComponent implements OnInit {
     if (localStorage.getItem('hiscore') !== null) {
       this.hiScore = localStorage.getItem('hiscore');
       console.log('>>>LOG hiscore onit >>>', this.hiScore);
-
     } else {
       this.playerName = 'Mystery person';
+      localStorage.setItem('hiscore', '0');
     }
     // console.log('>>> this.holes >>>', this.holes);
     // console.log('>>> event >>>', this.scoreBoard);
