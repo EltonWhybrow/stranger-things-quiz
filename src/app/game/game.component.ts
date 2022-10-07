@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-game',
@@ -7,14 +7,14 @@ import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren }
 })
 export class GameComponent implements OnInit {
 
-  playText: string = ' Lets play!';
+  playText: string = 'Lets play!';
   disablePlay: boolean = false;
   playerName: any = '';
   lastHole: boolean = false;
   timeUp: boolean = false;
   score: number = 0;
   moles: any;
-  hiScore: number = 0;
+  hiScore: any;
 
   constructor() { }
 
@@ -25,6 +25,13 @@ export class GameComponent implements OnInit {
   ngOnInit(): void {
     if (localStorage.getItem('player') !== null) {
       this.playerName = localStorage.getItem('player');
+    } else {
+      this.playerName = 'Mystery person';
+    }
+    if (localStorage.getItem('hiscore') !== null) {
+      this.hiScore = localStorage.getItem('hiscore');
+      console.log('>>>LOG hiscore onit >>>', this.hiScore);
+
     } else {
       this.playerName = 'Mystery person';
     }
@@ -51,7 +58,7 @@ export class GameComponent implements OnInit {
   }
 
   peep() {
-    const time = this.randomTime(200, 1000);
+    const time = this.randomTime(400, 1200);
     const hole = this.randomHole(this.holes.toArray());
     // console.log('>>>LOG HOLE>>>', hole);
 
@@ -69,12 +76,15 @@ export class GameComponent implements OnInit {
     this.peep();
     setTimeout(() => {
       setTimeout(() => {
-        this.hiScore = this.score;
+        if (this.hiScore < this.score) {
+          this.hiScore = this.score;
+          localStorage.setItem("hiscore", JSON.stringify(this.hiScore))
+        }
       }, 1000)
       this.timeUp = true;
       this.playText = 'Try again?'
       this.disablePlay = false;
-    }, 15000)
+    }, 20000)
   }
 
   bonk(e: Event) {
