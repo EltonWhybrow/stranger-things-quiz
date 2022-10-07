@@ -5,12 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "start-lint": "npm run lint && ng serve",
-    "build:prod": "npm run lint && ng test --watch=false --browsers=ChromeHeadless && ng build --base-href https://eltonwhybrow.github.io/stranger-things-quiz/ && angular-cli-ghpages --branch gh-pages",
+    "build:prod": "npm run lint && ng test --watch=false --browsers=ChromeHeadless && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "testCC": "ng test --code-coverage",
     "lint": "ng lint",
-    "deploy": "ng deploy"
+    "deploy": "ng deploy --base-href=/stranger-things-quiz/"
   },
   "private": true,
   "dependencies": {
