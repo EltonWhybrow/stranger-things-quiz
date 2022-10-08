@@ -31,10 +31,18 @@
 // Glowing text TODO: tidy
 .quiz-text {
   position: absolute;
-  bottom: -20px;
-  right: -50px;
   z-index: 110;
+  bottom: 40px;
+  right: -70px;
 }
+
+@media (min-width: 576px) {
+  .quiz-text {
+    bottom: -20px;
+    right: -50px;
+  }
+}
+
 .neonText {
   animation: flicker 5s infinite alternate;
   color: #fff;
@@ -105,7 +113,8 @@ h2 {
   }
 
   .logo__main {
-    width: 230px;
+    width: 190px;
+    top: -10px;
   }
 
   .navbar {

@@ -17,6 +17,7 @@ import { ConfirmDeactivateGuard } from './shared/confirm-deactivate-guard.guard'
 import { QuizDialogComponent } from './shared/quiz-dialog/quiz-dialog.component';
 import { GameComponent } from './game/game.component';
 import { GameGuard } from './shared/game.guard';
+import { UnauthorisedComponent } from './core/unauthorised/unauthorised.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { GameGuard } from './shared/game.guard';
     AboutComponent,
     MyDialogComponent,
     QuizDialogComponent,
-    GameComponent
+    GameComponent,
+    UnauthorisedComponent
   ],
   imports: [
     BrowserModule,
