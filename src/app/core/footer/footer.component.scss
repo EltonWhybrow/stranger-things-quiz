@@ -2,4 +2,14 @@
   padding: 5rem;
   color: white;
   text-align: center;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 10px;
+    margin: 2rem 0 !important;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+  }
 }
