@@ -230,3 +230,11 @@ h2.mat-h2 {
 // .hole.up .mole {
 //   top: 0;
 // }
+
+.hole:after {
+  background: url(./assets/imgs/game/pumpkin-patch.png) bottom center;
+}
+
+.mole {
+  background: url(./assets/imgs/game/whack-a-gorgon.svg) bottom center;
+}
