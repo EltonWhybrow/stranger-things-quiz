@@ -89,8 +89,11 @@ export class GameComponent implements OnInit {
 
   bonk(e: Event) {
     if (!e.isTrusted) return; // cheater!
+    (<HTMLTextAreaElement>e.target).classList.add('disabled');
     this.score++;
-    // console.log('>>> event >>>', e);
+    setTimeout(() => {
+      (<HTMLTextAreaElement>e.target).classList.remove('disabled');
+    }, 400);
   }
 
 }
