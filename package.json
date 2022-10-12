@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "start-lint": "npm run lint && ng serve",
+    "build": "ng build",
     "build:prod": "npm run lint && ng test --watch=false --browsers=ChromeHeadless && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",

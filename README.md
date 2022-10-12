@@ -1,11 +1,20 @@
 # Stranger Things Quiz API Playground
+## About
+Simple Stranger Things quiz and game. Test you ST fandom. Find out more on [here](https://eltonwhybrow.github.io/stranger-things-quiz/about)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
+## How to play
+Once you get to the [quiz](https://eltonwhybrow.github.io/stranger-things-quiz/quiz) page you have the chance to prove your fandom by answering questions on season 1-4 of Stranger Things. You will NOT find out your score untill the end, so you will have to be a real fan to get all correct (without cheating , that is!)
 
-Uses Angular Material for styling. [Find out more.](https://material.angular.io/)
+You can get a little refresher on the main characters by going to the [characters](https://eltonwhybrow.github.io/stranger-things-quiz/characters) view, but if you're a real fan you shouldn't need to do that.
+
+If you do manage to get all questions correct, you get the chance to play an added `bonus game` as a reward!
+
+## Tech
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+
+Uses [Angular Material](https://material.angular.io/).
 
 Once the app has been forked/pulled down locally you will need to to run `npm install` to install any dependencies.
-
 
 ## Development server
 
@@ -13,7 +22,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `docs/` directory as they are deployed to [github pages](https://eltonwhybrow.github.io/stranger-things-quiz/).
 
 ## Running unit tests
 
