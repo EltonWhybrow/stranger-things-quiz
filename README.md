@@ -1,4 +1,4 @@
-# Stranger Things Quiz API Playground
+# Stranger Things Fandom Quiz
 ## About
 Simple Stranger Things quiz and game. Test you ST fandom. Find out more on [here](https://eltonwhybrow.github.io/stranger-things-quiz/about)
 
