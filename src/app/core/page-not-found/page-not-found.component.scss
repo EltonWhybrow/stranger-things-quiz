@@ -1,4 +1,44 @@
-.character-img {
+.mat-card {
+  // width: 100%;
+  // height: auto;
+  background-color: transparent;
+  color: white;
+}
+
+.mat-card-image {
+  width: calc(100% + 32px);
+  margin: 0 -16px 16px -16px;
+}
+
+.back {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.character-photo {
   margin: 1rem auto 0;
-  display: block;
+  max-width: 800px;
+}
+
+.character-info {
+  display: inline-flex;
+  flex-wrap: wrap;
+  .details {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .character-info {
+    flex-wrap: nowrap;
+    justify-content: center;
+    .details {
+      width: 40%;
+    }
+  }
+}
+
+.mat-subheading-2 {
+  margin-bottom: 0;
 }
