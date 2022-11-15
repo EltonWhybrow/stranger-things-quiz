@@ -20,7 +20,9 @@ Once the app has been forked/pulled down locally you will need to to run `npm in
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Build
+## Build & Deploy to GitPages
+
+_NOTE: build before deploying to github as have not got actions doing build into gitPages_
 
 Run `ng build` to build the project. The build artifacts will be stored in the `docs/` directory as they are deployed to [github pages](https://eltonwhybrow.github.io/stranger-things-quiz/).
 
