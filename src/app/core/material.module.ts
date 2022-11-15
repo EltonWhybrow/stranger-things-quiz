@@ -10,7 +10,6 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDialogModule } from '@angular/material/dialog';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MatInputModule } from '@angular/material/input';
 
 const material = [
@@ -25,8 +24,6 @@ const material = [
   MatDialogModule,
   MatInputModule
 ]
-
-
 @NgModule({
   imports: [
     CommonModule,
@@ -35,9 +32,5 @@ const material = [
   exports: [
     material
   ],
-  declarations: [
-
-    PageNotFoundComponent
-  ]
 })
 export class MaterialModule { }

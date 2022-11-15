@@ -10,14 +10,12 @@ import { MaterialModule } from './core/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BgColorDirective } from './shared/bg-color.directive';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
-import { AboutComponent } from './about/about.component';
 import { MyDialogComponent } from './shared/my-dialog/my-dialog.component';
 import { FormsModule } from '@angular/forms';
 import { ConfirmDeactivateGuard } from './shared/confirm-deactivate-guard.guard';
 import { QuizDialogComponent } from './shared/quiz-dialog/quiz-dialog.component';
-import { GameComponent } from './game/game.component';
 import { GameGuard } from './shared/game.guard';
-import { UnauthorisedComponent } from './core/unauthorised/unauthorised.component';
+
 
 
 @NgModule({
@@ -28,11 +26,8 @@ import { UnauthorisedComponent } from './core/unauthorised/unauthorised.componen
     routingComponents,
     BgColorDirective,
     SpinnerComponent,
-    AboutComponent,
     MyDialogComponent,
-    QuizDialogComponent,
-    GameComponent,
-    UnauthorisedComponent
+    QuizDialogComponent
   ],
   imports: [
     BrowserModule,

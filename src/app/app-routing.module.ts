@@ -22,8 +22,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, title: 'About - Stranger Things Quiz' },
   { path: 'game', component: GameComponent, canActivate: [GameGuard], title: 'Whack a thing! - Stranger Things Quiz' },
   { path: 'unauthorised', component: UnauthorisedComponent, title: 'Unauthorised! - Stranger Things Quiz' },
-  { path: '**', component: PageNotFoundComponent, title: 'Page not found - Stranger Things Quiz' },
   { path: '', pathMatch: 'full', redirectTo: '' },
+  { path: '**', component: PageNotFoundComponent, title: 'Page not found - Stranger Things Quiz' },
 ]
 
 @NgModule({
@@ -38,5 +38,9 @@ export const routingComponents = [
   DashboardComponent,
   CharactersComponent,
   CharactersDetailsComponent,
-  QuizComponent
+  QuizComponent,
+  AboutComponent,
+  GameComponent,
+  UnauthorisedComponent,
+  PageNotFoundComponent
 ]
