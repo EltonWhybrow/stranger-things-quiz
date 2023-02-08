@@ -7,7 +7,7 @@ Once you get to the [quiz](https://eltonwhybrow.github.io/stranger-things-quiz/q
 
 You can get a little refresher on the main characters by going to the [characters](https://eltonwhybrow.github.io/stranger-things-quiz/characters) view, but if you're a real fan you shouldn't need to do that.
 
-If you do manage to get all questions correct, you get the chance to play an added `bonus game` as a reward!
+Update: Added `bonus game`. You no longer need to complete quiz to play 'Whack a Gorgon!'.
 
 ## Tech
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
@@ -22,7 +22,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Build & Deploy to GitPages
 
-_NOTE: build before deploying to github as have not got actions doing build into gitPages_
+_NOTE TO SELF: Build before deploying to github as have not got actions doing build into gitPages_
 
 Run `ng build` to build the project. The build artifacts will be stored in the `docs/` directory as they are deployed to [github pages](https://eltonwhybrow.github.io/stranger-things-quiz/).
 
