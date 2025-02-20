@@ -20,7 +20,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+           "outputPath": {
+                "base": "docs",
+                "browser": "",
+              },
             "resourcesOutputPath": "hashed-imgs",
             "index": "src/index.html",
             "main": "src/main.ts",
